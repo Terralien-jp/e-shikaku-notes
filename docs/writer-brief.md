@@ -61,6 +61,26 @@ sources:
 - **記号を導入したら必ず意味を書く。** $\theta$ とだけ書いて何のパラメータか書かないのは不合格
 - 導出は「途中式を全部書く」ではなく「**どこで何が効いたか**」がわかる粒度で
 
+## 3-2. 囲み・想起チェックの中に書くとき（必読）
+
+**`<div class="analogy">` `<div class="caution">` `<details class="recall">` の中身は、開きタグの直後に空行を入れないと Markdown も数式も解釈されません。**
+CommonMark が生の HTML ブロックとして丸ごと通してしまうためで、見た目は `$\varepsilon$` のような生文字がそのままページに出ます。
+
+```markdown
+<details class="recall">
+<summary>質問はここに（数式は使わない）</summary>
+
+答え。ここは空行で区切ったので $\theta$ も表も効きます。
+
+</details>
+```
+
+- 開きタグの直後・閉じタグの直前に**空行**を入れる
+- `</summary>` の直後にも**空行**を入れる
+- **`<summary>` の中に数式を書かない**（この行だけは常に生の HTML で、KaTeX が通らない）
+
+`validate.py` が `RAW_HTML_TIGHT` / `MATH_IN_SUMMARY` で ERROR にします。
+
 ## 4. コード
 
 - `content` に置くコードは**実際に実行されます**（CI が走らせる）
