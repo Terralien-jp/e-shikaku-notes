@@ -1,0 +1,74 @@
+name: 内容の誤り・古い記述を報告する
+description: 解説の間違い、リンク切れ、動かないコードなどを教えてください
+title: "[fix] "
+labels: ["content-fix", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ありがとうございます。**この報告はAIエージェントが最初に読んで分類します。**
+        自動で直せるものは Pull Request になり、判断が要るものは人間に回ります。
+        下の欄をできるだけ埋めてもらえると、自動処理に乗りやすくなります。
+
+  - type: input
+    id: slug
+    attributes:
+      label: 対象ページ
+      description: URL または slug（例 `backpropagation`）
+      placeholder: https://terralien.net/learn/e-shikaku/backpropagation/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 種類
+      options:
+        - 事実の誤り（数式・アルゴリズム・用語）
+        - 古い記述（API変更・仕様変更）
+        - 出典の問題（リンク切れ・出典にない記述）
+        - コードが動かない
+        - わかりにくい・誤読しやすい
+        - 未執筆の概念がある
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: quote
+    attributes:
+      label: 該当箇所の引用
+      description: ページ内の該当する文をそのまま貼ってください
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 何が違いますか
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: 正しくはどうなりますか
+      description: わかる範囲で。「違う気がする」だけでも助かります
+
+  - type: input
+    id: source
+    attributes:
+      label: 根拠になる一次情報のURL
+      description: 原論文・公式ドキュメントなど。あると自動で直せる確率が上がります
+      placeholder: https://arxiv.org/abs/...
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: 確認
+      options:
+        - label: 試験問題そのもの（過去問・想定問題）は含めていません
+          required: true
+        - label: 他社教材からの転記は含めていません
+          required: true

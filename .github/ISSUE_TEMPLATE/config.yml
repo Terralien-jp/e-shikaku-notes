@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 教材を読む
+    url: https://terralien.net/learn/e-shikaku/
+    about: 整形された読みやすい形はこちらです
+  - name: 試験そのものについて
+    url: https://www.jdla.org/
+    about: 出題範囲・受験要件・日程は公式にご確認ください（このリポジトリでは答えられません）

@@ -1,0 +1,43 @@
+name: validate
+
+# 外部からの PR にも同じ機械検証をかける。ここが「公開して修正を受け付ける」の土台。
+#
+# ★セルフホストランナーは使わない。public リポでは fork からの PR が
+#   ランナー上で任意コードを実行できてしまうため、必ず GitHub ホストランナーを使う。
+#   （public リポジトリの標準ランナーは無料枠の対象）
+# ★pull_request_target は使わない。fork のコードをシークレット付きの文脈で走らせないため。
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # katex が無いと数式検査が MATH_SKIP（WARN）で素通りする。
+      # CI で入れておかないと「検査が動いているのに効いていない」状態になる。
+      - name: install katex
+        run: npm install --no-save katex
+
+      - name: install python deps
+        run: pip install numpy
+
+      # --warn-only は絶対に付けない（付けると ERROR があっても exit 0）
+      - name: validate
+        run: python3 scripts/validate.py --check-code

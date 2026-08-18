@@ -1,0 +1,16 @@
+{
+  "exam": "E資格",
+  "syllabus_version": "TBD",
+  "note": "この台帳は Phase 0 で JDLA 公式シラバスの項目名から機械生成する。現在は形の見本のみ。",
+  "areas": ["応用数学", "機械学習", "深層学習", "開発・運用環境"],
+  "concepts": [
+    {
+      "slug": "backpropagation",
+      "concept": "誤差逆伝播法",
+      "area": "深層学習",
+      "tier": "A",
+      "syllabus_refs": [],
+      "status": "sample"
+    }
+  ]
+}
