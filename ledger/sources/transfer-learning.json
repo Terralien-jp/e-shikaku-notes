@@ -1,0 +1,10 @@
+{
+  "slug": "transfer-learning",
+  "sources": [
+    {
+      "title": "How transferable are features in deep neural networks?",
+      "url": "https://arxiv.org/abs/1411.1792",
+      "why": "事前学習特徴の転移性、層の深さとタスク類似度の関係"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "diffusion-model",
+  "sources": [
+    {
+      "title": "Denoising Diffusion Probabilistic Models",
+      "url": "https://arxiv.org/abs/2006.11239",
+      "why": "拡散過程、逆 denoising 過程、ノイズ予測による生成目的"
+    }
+  ]
+}

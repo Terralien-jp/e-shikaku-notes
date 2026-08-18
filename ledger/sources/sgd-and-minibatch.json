@@ -1,0 +1,7 @@
+{
+  "slug": "sgd-and-minibatch",
+  "sources": [
+    {"title": "Optimization Methods for Large-Scale Machine Learning", "url": "https://arxiv.org/abs/1606.04838", "why": "確率的勾配法とミニバッチによる大規模学習の更新則"},
+    {"title": "Deep Learning: Optimization for Training Deep Models", "url": "https://www.deeplearningbook.org/contents/optimization.html", "why": "勾配降下法、確率的勾配降下法、ミニバッチの基礎"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "slug": "yolo-and-ssd",
+  "sources": [
+    {"title": "You Only Look Once: Unified, Real-Time Object Detection", "url": "https://arxiv.org/abs/1506.02640", "why": "YOLOの単一ネットワークによる一段階物体検出"},
+    {"title": "SSD: Single Shot MultiBox Detector", "url": "https://arxiv.org/abs/1512.02325", "why": "SSDのマルチスケール特徴とデフォルトボックス"}
+  ]
+}

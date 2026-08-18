@@ -1,0 +1,15 @@
+{
+  "slug": "dqn",
+  "sources": [
+    {
+      "title": "Playing Atari with Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1312.5602",
+      "why": "深層Qネットワーク、経験再生、固定Qターゲットの基本構成"
+    },
+    {
+      "title": "Human-level control through deep reinforcement learning",
+      "url": "https://doi.org/10.1038/nature14236",
+      "why": "DQNの評価設定とAtariゲームにおける深層強化学習の実証"
+    }
+  ]
+}

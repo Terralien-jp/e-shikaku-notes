@@ -1,0 +1,7 @@
+{
+  "slug": "automatic-differentiation",
+  "sources": [
+    {"title": "Automatic differentiation with torch.autograd", "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html", "why": "PyTorch autogradの計算グラフ構築と勾配取得"},
+    {"title": "torch.autograd", "url": "https://docs.pytorch.org/docs/stable/autograd.html", "why": "自動微分エンジンの公式API仕様と勾配追跡"}
+  ]
+}

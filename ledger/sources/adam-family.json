@@ -1,0 +1,15 @@
+{
+  "slug": "adam-family",
+  "sources": [
+    {
+      "title": "Adam: A Method for Stochastic Optimization",
+      "url": "https://arxiv.org/abs/1412.6980",
+      "why": "Adamの一次・二次モーメント推定、バイアス補正、更新則"
+    },
+    {
+      "title": "On the Convergence of Adam and Beyond",
+      "url": "https://openreview.net/forum?id=ryQu7f-RZ",
+      "why": "Adamの収束条件とAMSGradによる更新則の改善"
+    }
+  ]
+}

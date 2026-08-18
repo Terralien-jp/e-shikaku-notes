@@ -1,0 +1,7 @@
+{
+  "slug": "recurrent-neural-network",
+  "sources": [
+    {"title": "Deep Learning: Sequence Modeling", "url": "https://www.deeplearningbook.org/contents/rnn.html", "why": "RNNの状態更新、系列入力、時間方向の勾配計算"},
+    {"title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation", "url": "https://arxiv.org/abs/1406.1078", "why": "RNNエンコーダ・デコーダによる系列表現と変換"}
+  ]
+}

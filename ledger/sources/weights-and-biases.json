@@ -1,0 +1,15 @@
+{
+  "slug": "weights-and-biases",
+  "sources": [
+    {
+      "title": "torch.nn.parameter.Parameter",
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.parameter.Parameter.html",
+      "why": "PyTorchで学習対象として登録される重み・バイアスの実装"
+    },
+    {
+      "title": "Deep Learning",
+      "url": "https://www.deeplearningbook.org/contents/mlp.html",
+      "why": "ニューラルネットワークにおける重み、バイアス、層の写像"
+    }
+  ]
+}

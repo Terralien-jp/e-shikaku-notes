@@ -1,0 +1,7 @@
+{
+  "slug": "activation-functions",
+  "sources": [
+    {"title": "Deep Learning: Deep Feedforward Networks", "url": "https://www.deeplearningbook.org/contents/mlp.html", "why": "活性化関数の非線形性と勾配伝播における役割"},
+    {"title": "PyTorch nn package", "url": "https://docs.pytorch.org/docs/stable/nn.html", "why": "ReLU、Sigmoid、Tanhなど活性化層の公式API仕様"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "self-attention",
+  "sources": [
+    {
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "why": "Scaled Dot-Product Attention、Multi-Head Attention、スケーリング係数"
+    }
+  ]
+}

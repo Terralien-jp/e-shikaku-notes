@@ -1,0 +1,7 @@
+{
+  "slug": "generalization-error",
+  "sources": [
+    {"title": "Deep Learning: Regularization for Deep Learning", "url": "https://www.deeplearningbook.org/contents/regularization.html", "why": "訓練誤差と汎化誤差、汎化性能を左右する要因"},
+    {"title": "Deep Learning: Machine Learning Basics", "url": "https://www.deeplearningbook.org/contents/ml.html", "why": "学習・評価誤差と機械学習モデルの性能評価の基礎"}
+  ]
+}

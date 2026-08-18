@@ -1,0 +1,7 @@
+{
+  "slug": "parameter-estimation",
+  "sources": [
+    {"title": "Deep Learning: Probability and Information Theory", "url": "https://www.deeplearningbook.org/contents/prob.html", "why": "確率モデル、確率分布、期待値を用いたパラメータ推定の基礎"},
+    {"title": "Deep Learning: Numerical Computation", "url": "https://www.deeplearningbook.org/contents/numerical.html", "why": "最適化問題としての推定と勾配に基づくパラメータ更新"}
+  ]
+}

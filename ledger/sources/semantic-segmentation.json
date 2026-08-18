@@ -1,0 +1,7 @@
+{
+  "slug": "semantic-segmentation",
+  "sources": [
+    {"title": "Fully Convolutional Networks for Semantic Segmentation", "url": "https://arxiv.org/abs/1411.4038", "why": "画素単位分類としてのセマンティックセグメンテーション"},
+    {"title": "Deep Learning: Convolutional Networks", "url": "https://www.deeplearningbook.org/contents/convnets.html", "why": "畳み込み特徴を密な画素予測へ使う基礎"}
+  ]
+}

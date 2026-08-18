@@ -1,0 +1,10 @@
+{
+  "slug": "gradient-descent",
+  "sources": [
+    {
+      "title": "Deep Learning",
+      "url": "https://www.deeplearningbook.org/contents/optimization.html",
+      "why": "勾配降下法、確率的勾配、学習率によるパラメータ更新の定義"
+    }
+  ]
+}

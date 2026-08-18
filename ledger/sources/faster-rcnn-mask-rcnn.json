@@ -1,0 +1,7 @@
+{
+  "slug": "faster-rcnn-mask-rcnn",
+  "sources": [
+    {"title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks", "url": "https://arxiv.org/abs/1506.01497", "why": "RPNとFaster R-CNNの二段階物体検出構成"},
+    {"title": "Mask R-CNN", "url": "https://arxiv.org/abs/1703.06870", "why": "Faster R-CNNを拡張した領域マスク分岐とインスタンス分割"}
+  ]
+}

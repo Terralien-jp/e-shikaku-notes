@@ -1,0 +1,15 @@
+{
+  "slug": "autoencoder",
+  "sources": [
+    {
+      "title": "Deep Learning",
+      "url": "https://www.deeplearningbook.org/contents/autoencoders.html",
+      "why": "エンコーダ・デコーダ、再構成誤差、表現学習としての自己符号化器"
+    },
+    {
+      "title": "Reducing the Dimensionality of Data with Neural Networks",
+      "url": "https://doi.org/10.1038/nature04569",
+      "why": "ニューラルネットワークによる非線形次元削減と再構成の提案"
+    }
+  ]
+}

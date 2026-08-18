@@ -1,0 +1,7 @@
+{
+  "slug": "overfit-underfit",
+  "sources": [
+    {"title": "Deep Learning: Regularization for Deep Learning", "url": "https://www.deeplearningbook.org/contents/regularization.html", "why": "過学習・未学習とモデル容量、正則化による制御"},
+    {"title": "Deep Learning: Machine Learning Basics", "url": "https://www.deeplearningbook.org/contents/ml.html", "why": "訓練誤差とテスト誤差から過学習を判定する基礎"}
+  ]
+}

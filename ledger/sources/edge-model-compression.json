@@ -1,0 +1,10 @@
+{
+  "slug": "edge-model-compression",
+  "sources": [
+    {
+      "title": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+      "url": "https://arxiv.org/abs/1510.00149",
+      "why": "枝刈り、量子化、Huffman符号化によるモデル圧縮の構成"
+    }
+  ]
+}

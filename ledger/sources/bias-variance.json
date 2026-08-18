@@ -1,0 +1,7 @@
+{
+  "slug": "bias-variance",
+  "sources": [
+    {"title": "Deep Learning: Regularization for Deep Learning", "url": "https://www.deeplearningbook.org/contents/regularization.html", "why": "バイアス・バリアンス分解とモデル容量、正則化の関係"},
+    {"title": "Deep Learning: Machine Learning Basics", "url": "https://www.deeplearningbook.org/contents/ml.html", "why": "推定誤差をバイアスとバリアンスで捉える基礎"}
+  ]
+}

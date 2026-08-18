@@ -1,0 +1,10 @@
+{
+  "slug": "bayesian-inference",
+  "sources": [
+    {
+      "title": "Deep Learning",
+      "url": "https://www.deeplearningbook.org/contents/prob.html",
+      "why": "確率モデル、条件付き確率、ベイズの定理と事後分布の定義"
+    }
+  ]
+}

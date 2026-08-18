@@ -1,0 +1,7 @@
+{
+  "slug": "resnet",
+  "sources": [
+    {"title": "Deep Residual Learning for Image Recognition", "url": "https://arxiv.org/abs/1512.03385", "why": "残差学習、スキップ接続、ResNetの設計"},
+    {"title": "Deep Learning: Convolutional Networks", "url": "https://www.deeplearningbook.org/contents/convnets.html", "why": "畳み込みネットワーク内での残差接続の役割"}
+  ]
+}

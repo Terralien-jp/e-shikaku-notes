@@ -1,0 +1,10 @@
+{
+  "slug": "lstm",
+  "sources": [
+    {
+      "title": "Long Short-Term Memory",
+      "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+      "why": "LSTMのセル状態、ゲート構造、長期依存を扱う更新則"
+    }
+  ]
+}

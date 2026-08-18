@@ -1,0 +1,20 @@
+{
+  "slug": "normalization-variants",
+  "sources": [
+    {
+      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "url": "https://arxiv.org/abs/1502.03167",
+      "why": "Batch Normalizationのミニバッチ統計、学習時と推論時の扱い"
+    },
+    {
+      "title": "Layer Normalization",
+      "url": "https://arxiv.org/abs/1607.06450",
+      "why": "Layer Normalizationの正規化軸と系列モデルでの利用"
+    },
+    {
+      "title": "Group Normalization",
+      "url": "https://arxiv.org/abs/1803.08494",
+      "why": "Group Normalizationのチャネル分割と小バッチでの正規化"
+    }
+  ]
+}

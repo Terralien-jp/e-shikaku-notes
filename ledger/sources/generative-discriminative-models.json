@@ -1,0 +1,10 @@
+{
+  "slug": "generative-discriminative-models",
+  "sources": [
+    {
+      "title": "Deep Learning",
+      "url": "https://www.deeplearningbook.org/contents/generative_models.html",
+      "why": "生成モデルと識別モデルの目的、確率分布のモデル化と分類の違い"
+    }
+  ]
+}
