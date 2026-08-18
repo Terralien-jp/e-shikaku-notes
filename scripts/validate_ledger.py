@@ -80,7 +80,7 @@ def check(data: dict) -> list[Finding]:
     for i, c in enumerate(concepts):
         tag = c.get("slug") or f"#{i}"
 
-        for key in ("slug", "concept", "area", "tier", "syllabus_refs", "status"):
+        for key in ("slug", "concept", "area", "tier", "syllabus_refs", "status", "optional"):
             if key not in c:
                 out.append(Finding("ERROR", "CONCEPT_SHAPE", f"{tag}: {key} がありません"))
                 continue
@@ -108,6 +108,21 @@ def check(data: dict) -> list[Finding]:
                                    f"{tag}: concept が文になっています（「{mark}」を含む）。"
                                    "シラバス本文の転記は禁止です"))
                 break
+
+        # ★シラバスでグレー網掛（出題対象外）の節に紐づく概念は optional: true でなければならない。
+        #   ここを人手の注意に任せると、対象外の節が黙って本編に混ざる（実際に2件混ざった）。
+        opt_sections = set(data.get("optional_sections", []))
+        refs_set = set(c.get("syllabus_refs") or [])
+        if opt_sections and refs_set:
+            all_opt = refs_set <= opt_sections
+            if all_opt and c.get("optional") is not True:
+                out.append(Finding("ERROR", "OPTIONAL_DRIFT",
+                                   f"{tag}: 出題対象外の節のみを参照しているのに optional が true ではありません"))
+            if not (refs_set & opt_sections) and c.get("optional") is True:
+                out.append(Finding("ERROR", "OPTIONAL_DRIFT",
+                                   f"{tag}: 出題対象内の節を参照しているのに optional: true になっています"))
+        if not isinstance(c.get("optional"), bool):
+            out.append(Finding("ERROR", "OPTIONAL_TYPE", f"{tag}: optional は true / false"))
 
         area = c.get("area")
         if area not in VALID_AREAS:
