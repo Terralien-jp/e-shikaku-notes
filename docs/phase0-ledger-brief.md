@@ -24,8 +24,33 @@
 - 一覧ページ: <https://www.jdla.org/certificate/engineer/>
 - このページに「E資格の試験出題範囲（シラバス）E2026#2〜」へのリンクがあります。**そこから辿ってください**
 
-**PDFの直リンクURLを推測して組み立てないでください。** 一覧ページを開いて、そこにあるリンクを踏みます。
-取得できない場合（PDFが読めない・アクセスできない等）は、**何がどう失敗したかを書いて終了**してください。
+**PDFの直リンクURLを推測して組み立てないでください。** 一覧ページから機械的に辿ります。
+
+### 取得手順（2026-08-18 に動作確認済み）
+
+★**ブラウザ系のツールは使えません**（承認が要るため自動で拒否されます）。**`curl` を使ってください。**
+
+配布は WordPress の download-manager プラグイン経由で、ダウンロードURLは
+ページ内の `data-downloadurl` 属性に入っています。**そこから取り出します**（組み立てない）。
+
+```bash
+PAGE='https://www.jdla.org/certificate/engineer/'
+# 1. 一覧ページから「E2026#2〜」のシラバス配布ページのURLを取り出す
+# 2. その配布ページを取得し、data-downloadurl 属性の値を抜く
+curl -sL "$DOWNLOAD_PAGE" -o /tmp/jdla.html
+DL=$(grep -oE 'data-downloadurl="[^"]*"' /tmp/jdla.html | head -1 | sed 's/data-downloadurl="//;s/"$//')
+# 3. PDF を取得してテキスト化する
+curl -sL "$DL" -o /tmp/syllabus.pdf
+pdftotext -layout /tmp/syllabus.pdf /tmp/syllabus.txt
+```
+
+**期待される結果**（違ったら版が変わった可能性があるので報告してください）:
+`/tmp/syllabus.pdf` は5ページの PDF、`/tmp/syllabus.txt` は約21,000字。
+先頭に「E資格 試験出題範囲 (シラバス 2026)」「2026年8月試験（E2026#2）より適用」とあります。
+
+`pdftotext` が無い場合は `python3 -c "import pypdf"` を試し、どちらも無ければ**そこで報告して終了**してください。
+
+取得できない場合は、**何がどう失敗したかを書いて終了**してください。推測で埋めないこと。
 
 ## 2. やること
 
