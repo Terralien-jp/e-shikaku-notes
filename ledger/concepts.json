@@ -316,7 +316,7 @@
       "syllabus_refs": [
         "3.2.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "automatic-differentiation",
