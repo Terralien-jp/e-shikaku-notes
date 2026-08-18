@@ -1,0 +1,10 @@
+{
+  "slug": "bert-pretraining",
+  "sources": [
+    {
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "url": "https://arxiv.org/abs/1810.04805",
+      "why": "双方向Transformer表現、Masked LM、Next Sentence Predictionの定義"
+    }
+  ]
+}

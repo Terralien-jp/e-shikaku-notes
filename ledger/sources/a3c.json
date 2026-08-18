@@ -1,0 +1,10 @@
+{
+  "slug": "a3c",
+  "sources": [
+    {
+      "title": "Asynchronous Methods for Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1602.01783",
+      "why": "A3Cの非同期actor-learner、方策勾配と価値関数の学習構成"
+    }
+  ]
+}

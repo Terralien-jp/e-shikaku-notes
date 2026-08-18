@@ -1,0 +1,7 @@
+{
+  "slug": "bert",
+  "sources": [
+    {"title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", "url": "https://arxiv.org/abs/1810.04805", "why": "双方向Transformerの事前学習と下流タスク適応"},
+    {"title": "BERT model documentation", "url": "https://huggingface.co/docs/transformers/model_doc/bert", "why": "BERTの入力表現、モデル構成、公式実装API"}
+  ]
+}

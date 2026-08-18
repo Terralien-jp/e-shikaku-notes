@@ -1,0 +1,15 @@
+{
+  "slug": "object-detection-basics",
+  "sources": [
+    {
+      "title": "Rich feature hierarchies for accurate object detection and semantic segmentation",
+      "url": "https://arxiv.org/abs/1311.2524",
+      "why": "物体検出における候補領域、特徴抽出、分類と矩形回帰の基本構成"
+    },
+    {
+      "title": "Fast R-CNN",
+      "url": "https://arxiv.org/abs/1504.08083",
+      "why": "検出器の分類損失と矩形回帰損失を同時に最適化する定式化"
+    }
+  ]
+}

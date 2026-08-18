@@ -1,0 +1,10 @@
+{
+  "slug": "vae",
+  "sources": [
+    {
+      "title": "Auto-Encoding Variational Bayes",
+      "url": "https://arxiv.org/abs/1312.6114",
+      "why": "変分下限、再パラメータ化トリック、VAEのエンコーダ・デコーダ"
+    }
+  ]
+}

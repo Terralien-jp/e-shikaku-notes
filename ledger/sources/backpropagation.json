@@ -1,0 +1,7 @@
+{
+  "slug": "backpropagation",
+  "sources": [
+    {"title": "Learning representations by back-propagating errors", "url": "https://doi.org/10.1038/323533a0", "why": "誤差逆伝播法による多層ネットワークの学習手順"},
+    {"title": "Deep Learning: Deep Feedforward Networks", "url": "https://www.deeplearningbook.org/contents/mlp.html", "why": "計算グラフ上の連鎖律と逆方向の勾配計算"}
+  ]
+}

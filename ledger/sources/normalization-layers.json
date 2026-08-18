@@ -1,0 +1,7 @@
+{
+  "slug": "normalization-layers",
+  "sources": [
+    {"title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift", "url": "https://arxiv.org/abs/1502.03167", "why": "バッチ正規化の計算、学習可能なスケール・シフト"},
+    {"title": "Layer Normalization", "url": "https://arxiv.org/abs/1607.06450", "why": "層正規化の正規化軸と系列モデルでの適用"}
+  ]
+}

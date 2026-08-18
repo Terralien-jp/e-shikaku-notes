@@ -1,0 +1,10 @@
+{
+  "slug": "residual-block",
+  "sources": [
+    {
+      "title": "Deep Residual Learning for Image Recognition",
+      "url": "https://arxiv.org/abs/1512.03385",
+      "why": "Residual Blockの恒等ショートカットと残差関数を学習する構成"
+    }
+  ]
+}

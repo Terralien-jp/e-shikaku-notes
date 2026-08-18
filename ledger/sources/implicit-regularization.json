@@ -1,0 +1,7 @@
+{
+  "slug": "implicit-regularization",
+  "sources": [
+    {"title": "Understanding deep learning requires rethinking generalization", "url": "https://arxiv.org/abs/1611.03530", "why": "過剰パラメータ化モデルの汎化と最適化が生む陰的正則化"},
+    {"title": "Deep Learning: Regularization for Deep Learning", "url": "https://www.deeplearningbook.org/contents/regularization.html", "why": "明示的正則化と学習手続きによる暗黙の制約の整理"}
+  ]
+}

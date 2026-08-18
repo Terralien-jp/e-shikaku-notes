@@ -1,0 +1,7 @@
+{
+  "slug": "multilayer-perceptron",
+  "sources": [
+    {"title": "Deep Learning: Deep Feedforward Networks", "url": "https://www.deeplearningbook.org/contents/mlp.html", "why": "多層パーセプトロンの構造、順伝播、関数近似"},
+    {"title": "Neural network models (supervised)", "url": "https://scikit-learn.org/stable/modules/neural_networks_supervised.html", "why": "MLP分類・回帰の公式実装仕様と学習対象"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "semi-self-supervised-learning",
+  "sources": [
+    {
+      "title": "Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results",
+      "url": "https://arxiv.org/abs/1703.01780",
+      "why": "半教師あり学習の一貫性正則化と教師モデルの重み平均"
+    },
+    {
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+      "url": "https://arxiv.org/abs/2002.05709",
+      "why": "自己教師あり対照学習の拡張、表現学習、投影ヘッドの構成"
+    }
+  ]
+}

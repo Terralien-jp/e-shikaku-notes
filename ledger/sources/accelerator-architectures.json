@@ -1,0 +1,10 @@
+{
+  "slug": "accelerator-architectures",
+  "sources": [
+    {
+      "title": "CUDA C++ Programming Guide",
+      "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/",
+      "why": "GPUのスレッド階層、メモリ階層、カーネル実行モデル"
+    }
+  ]
+}

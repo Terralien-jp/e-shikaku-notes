@@ -1,0 +1,7 @@
+{
+  "slug": "vision-transformer",
+  "sources": [
+    {"title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale", "url": "https://arxiv.org/abs/2010.11929", "why": "画像パッチをトークン化してTransformerで分類する構成"},
+    {"title": "ViT model documentation", "url": "https://huggingface.co/docs/transformers/model_doc/vit", "why": "ViTの入力、パッチ埋め込み、推論APIの公式仕様"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "adaptive-optimizers",
+  "sources": [
+    {
+      "title": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization",
+      "url": "https://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf",
+      "why": "AdaGradの適応的学習率と勾配履歴による座標別更新"
+    },
+    {
+      "title": "Adam: A Method for Stochastic Optimization",
+      "url": "https://arxiv.org/abs/1412.6980",
+      "why": "モーメント推定に基づく適応的最適化とAdamの更新則"
+    }
+  ]
+}

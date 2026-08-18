@@ -1,0 +1,10 @@
+{
+  "slug": "gan",
+  "sources": [
+    {
+      "title": "Generative Adversarial Nets",
+      "url": "https://arxiv.org/abs/1406.2661",
+      "why": "生成器と識別器のminimaxゲーム、GANの学習目的と理論上の均衡"
+    }
+  ]
+}

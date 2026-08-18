@@ -1,0 +1,10 @@
+{
+  "slug": "distributed-deep-learning",
+  "sources": [
+    {
+      "title": "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour",
+      "url": "https://arxiv.org/abs/1706.02677",
+      "why": "同期分散SGD、線形スケーリング則、ウォームアップと大規模GPU学習"
+    }
+  ]
+}

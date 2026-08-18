@@ -1,0 +1,7 @@
+{
+  "slug": "transformer",
+  "sources": [
+    {"title": "Attention Is All You Need", "url": "https://arxiv.org/abs/1706.03762", "why": "Transformer、Self-Attention、Multi-Head Attentionの構成"},
+    {"title": "Deep Learning: Sequence Modeling", "url": "https://www.deeplearningbook.org/contents/rnn.html", "why": "系列モデルにおける注意機構とRNNとの位置付け"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "autoregressive-generation",
+  "sources": [
+    {
+      "title": "Language Models are Unsupervised Multitask Learners",
+      "url": "https://openreview.net/forum?id=H1gaxQgrg",
+      "why": "自己回帰言語モデルによる逐次トークン生成と事前学習の位置付け"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "slug": "seq2seq-and-attention",
+  "sources": [
+    {"title": "Sequence to Sequence Learning with Neural Networks", "url": "https://arxiv.org/abs/1409.3215", "why": "系列変換のエンコーダ・デコーダ構成と学習"},
+    {"title": "Neural Machine Translation by Jointly Learning to Align and Translate", "url": "https://arxiv.org/abs/1409.0473", "why": "注意重みで入力系列を動的に参照する機構の定義"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "slug": "word-embedding",
+  "sources": [
+    {"title": "Efficient Estimation of Word Representations in Vector Space", "url": "https://arxiv.org/abs/1301.3781", "why": "単語を分散ベクトルへ写像するSkip-gramとCBOW"},
+    {"title": "Deep Learning: Representation Learning", "url": "https://www.deeplearningbook.org/contents/representation.html", "why": "分散表現と特徴学習の位置付け"}
+  ]
+}

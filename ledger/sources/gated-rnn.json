@@ -1,0 +1,7 @@
+{
+  "slug": "gated-rnn",
+  "sources": [
+    {"title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation", "url": "https://arxiv.org/abs/1406.1078", "why": "GRUのリセットゲート・更新ゲートと状態更新"},
+    {"title": "Deep Learning: Sequence Modeling", "url": "https://www.deeplearningbook.org/contents/rnn.html", "why": "ゲート付きRNNが長期依存を扱う仕組みの整理"}
+  ]
+}

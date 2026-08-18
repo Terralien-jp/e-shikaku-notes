@@ -1,0 +1,15 @@
+{
+  "slug": "gpt-and-rag",
+  "sources": [
+    {
+      "title": "Language Models are Few-Shot Learners",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "why": "GPT系の自己回帰言語モデルと大規模事前学習・few-shot推論"
+    },
+    {
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "why": "検索器と生成器を組み合わせるRAGの構成と知識集約タスクへの適用"
+    }
+  ]
+}
