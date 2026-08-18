@@ -1,9 +1,8 @@
 {
   "exam": "E資格",
-  "ledger_status": "bootstrap",
+  "ledger_status": "complete",
   "syllabus_version": "E2026#2",
   "syllabus_source": "https://www.jdla.org/certificate/engineer/",
-  "note": "Phase 0 で公式シラバスから概念を洗い出して concepts を埋め、ledger_status を complete にする。手順は docs/phase0-ledger-brief.md。",
   "areas": [
     "応用数学",
     "機械学習",
@@ -12,14 +11,1254 @@
   ],
   "concepts": [
     {
+      "slug": "parameter-estimation",
+      "concept": "確率モデルの推定",
+      "area": "応用数学",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "1.2.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "entropy-and-information",
+      "concept": "情報量とエントロピー",
+      "area": "応用数学",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "1.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "divergence-measures",
+      "concept": "分布間ダイバージェンス",
+      "area": "応用数学",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "1.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "knn",
+      "concept": "k近傍法",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "distance-metrics",
+      "concept": "距離尺度",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "learning-paradigms",
+      "concept": "学習パラダイム",
+      "area": "機械学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "generalization-error",
+      "concept": "汎化誤差",
+      "area": "機械学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.ix"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "bias-variance",
+      "concept": "バイアスとバリアンス",
+      "area": "機械学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.ix"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "overfit-underfit",
+      "concept": "過学習と未学習",
+      "area": "機械学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.ix"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "curse-of-dimensionality",
+      "concept": "次元の呪い",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.ix"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "dataset-splits",
+      "concept": "データ分割",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.x"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "cross-validation",
+      "concept": "交差検証",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.x"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "classification-metrics",
+      "concept": "分類性能指標",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "roc-and-auc",
+      "concept": "ROCとAUC",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "iou-and-map",
+      "concept": "IoUとmAP",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "regression-metrics",
+      "concept": "回帰性能指標",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "confusion-matrix",
+      "concept": "混同行列",
+      "area": "機械学習",
+      "tier": "C",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "perplexity",
+      "concept": "パープレキシティ",
+      "area": "機械学習",
+      "tier": "C",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "multilayer-perceptron",
+      "concept": "多層パーセプトロン",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "regression-losses",
+      "concept": "回帰損失",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "binary-cross-entropy",
+      "concept": "二値分類損失",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "multiclass-cross-entropy",
+      "concept": "多クラス分類損失",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "special-classification-loss",
+      "concept": "特殊な分類損失",
+      "area": "深層学習",
+      "tier": "C",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "activation-functions",
+      "concept": "活性化関数",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "sgd-and-minibatch",
+      "concept": "確率的勾配降下法",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "momentum-optimization",
+      "concept": "モメンタム法",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "pathological-curvature",
+      "concept": "病的曲率",
+      "area": "深層学習",
+      "tier": "C",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.i"
+      ],
+      "status": "todo"
+    },
+    {
       "slug": "backpropagation",
       "concept": "誤差逆伝播法",
       "area": "深層学習",
       "tier": "A",
+      "optional": false,
       "syllabus_refs": [
-        "TBD"
+        "3.2.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "concept": "自動微分",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "adaptive-optimizers",
+      "concept": "適応的最適化法",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "parameter-initialization",
+      "concept": "パラメータ初期化",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.iv"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "norm-penalty",
+      "concept": "ノルムペナルティ",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "dropout",
+      "concept": "ドロップアウト",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.3.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "implicit-regularization",
+      "concept": "陰的正則化",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.3.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "convolution-operation",
+      "concept": "畳み込み演算",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "specialized-convolutions",
+      "concept": "特殊な畳み込み",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "pooling",
+      "concept": "プーリング",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "concept": "リカレントニューラルネットワーク",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.5.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "bptt",
+      "concept": "BPTT",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.5.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "gated-rnn",
+      "concept": "ゲート付きRNN",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.5.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "seq2seq-and-attention",
+      "concept": "系列変換と注意機構",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.5.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "transformer",
+      "concept": "Transformer",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.6.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "image-augmentation",
+      "concept": "画像データ拡張",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.7.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "text-augmentation",
+      "concept": "自然言語データ拡張",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.7.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "normalization-layers",
+      "concept": "正規化層",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.7.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "deep-ensemble",
+      "concept": "深層学習のアンサンブル",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.7.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "concept": "ハイパーパラメータ調整",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.7.iv"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "hyperparameter-search",
+      "concept": "ハイパーパラメータ探索",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.7.iv"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "resnet",
+      "concept": "ResNet",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "vision-transformer",
+      "concept": "Vision Transformer",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "faster-rcnn-mask-rcnn",
+      "concept": "Faster R-CNNとMask R-CNN",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "yolo-and-ssd",
+      "concept": "YOLOとSSD",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.2.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "fcos",
+      "concept": "FCOS",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.2.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "concept": "セマンティックセグメンテーション",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "word-embedding",
+      "concept": "単語埋め込み",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "bert",
+      "concept": "BERT",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.4.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "gpt-and-rag",
+      "concept": "GPTとRAG",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.4.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "generative-discriminative-models",
+      "concept": "生成モデルと識別モデル",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "autoencoder",
+      "concept": "オートエンコーダ",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "vae",
+      "concept": "VAE",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "gan",
+      "concept": "GAN",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "conditional-gan",
+      "concept": "条件付きGAN",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "dqn",
+      "concept": "DQN",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.7.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "a3c",
+      "concept": "A3C",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.7.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "transfer-learning",
+      "concept": "転移学習",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.8.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "semi-self-supervised-learning",
+      "concept": "半教師ありと自己教師あり学習",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.8.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "metric-learning-pairs",
+      "concept": "ペア比較の距離学習",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.8.iv"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "metric-learning-triplets",
+      "concept": "三つ組比較の距離学習",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.8.iv"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "visual-explanations",
+      "concept": "判断根拠の可視化",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.9.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "model-interpretation",
+      "concept": "モデルの近似解釈",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.9.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "edge-model-compression",
+      "concept": "エッジ向けモデル軽量化",
+      "area": "開発・運用環境",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "5.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "distributed-deep-learning",
+      "concept": "分散深層学習",
+      "area": "開発・運用環境",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "5.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "parallelization-strategies",
+      "concept": "モデル並列とデータ並列",
+      "area": "開発・運用環境",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "5.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "accelerator-architectures",
+      "concept": "アクセラレータ構成",
+      "area": "開発・運用環境",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "5.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "container-virtualization",
+      "concept": "コンテナ型仮想化",
+      "area": "開発・運用環境",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "5.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "conditional-and-marginal-probability",
+      "concept": "条件付き確率と周辺確率",
+      "area": "応用数学",
+      "tier": "A",
+      "optional": true,
+      "syllabus_refs": [
+        "1.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "bayesian-inference",
+      "concept": "ベイズ推論",
+      "area": "応用数学",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "1.2.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "likelihood-and-map",
+      "concept": "尤度とMAP推定",
+      "area": "応用数学",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "1.2.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "kl-and-js-divergence",
+      "concept": "KLとJSダイバージェンス",
+      "area": "応用数学",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "1.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "nearest-neighbor-search",
+      "concept": "近傍探索",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "norms-and-correlations",
+      "concept": "ノルムと相関",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": true,
+      "syllabus_refs": [
+        "2.1.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "train-validation-test",
+      "concept": "訓練検証テスト分割",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.x"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "precision-recall-f1",
+      "concept": "適合率再現率F値",
+      "area": "機械学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "multiclass-averaging",
+      "concept": "多クラス平均法",
+      "area": "機械学習",
+      "tier": "C",
+      "optional": false,
+      "syllabus_refs": [
+        "2.1.xi"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "weights-and-biases",
+      "concept": "重みとバイアス",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "mse-and-mae",
+      "concept": "MSEとMAE",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "softmax-and-onehot",
+      "concept": "ソフトマックスとone-hot",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "sigmoid-activation",
+      "concept": "シグモイド活性化",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "relu-family",
+      "concept": "ReLU系活性化",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "tanh-activation",
+      "concept": "tanh活性化",
+      "area": "深層学習",
+      "tier": "C",
+      "optional": false,
+      "syllabus_refs": [
+        "3.1.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "gradient-descent",
+      "concept": "勾配降下法",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "nesterov-acceleration",
+      "concept": "Nesterov加速",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "adam-family",
+      "concept": "Adam系最適化",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "xavier-and-he-init",
+      "concept": "XavierとHe初期化",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.2.iv"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "l1-and-l2-penalty",
+      "concept": "L1とL2ペナルティ",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "early-stopping",
+      "concept": "早期終了",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.3.iii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "receptive-field",
+      "concept": "受容野",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "feature-map-and-padding",
+      "concept": "特徴マップとパディング",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "depthwise-and-pointwise",
+      "concept": "深さ方向と点ごとの畳み込み",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "lstm",
+      "concept": "LSTM",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.5.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "gru",
+      "concept": "GRU",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "3.5.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "self-attention",
+      "concept": "Self-Attention",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.6.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "normalization-variants",
+      "concept": "正規化手法の使い分け",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "3.7.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "residual-block",
+      "concept": "Residual Block",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.1.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "object-detection-basics",
+      "concept": "物体検出の基本",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.2.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "nms-and-anchor-box",
+      "concept": "NMSとアンカーボックス",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.2.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "panoptic-segmentation",
+      "concept": "パノプティック分割",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.3.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "word2vec",
+      "concept": "Word2vec",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.4.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "bert-pretraining",
+      "concept": "BERT事前学習",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.4.ii"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "autoregressive-generation",
+      "concept": "自己回帰生成",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "diffusion-model",
+      "concept": "拡散モデル",
+      "area": "深層学習",
+      "tier": "A",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.i"
+      ],
+      "status": "todo"
+    },
+    {
+      "slug": "gan-stability",
+      "concept": "GANの学習安定化",
+      "area": "深層学習",
+      "tier": "B",
+      "optional": false,
+      "syllabus_refs": [
+        "4.6.iii"
       ],
       "status": "todo"
     }
-  ]
+  ],
+  "optional_sections": [
+    "1.1.i",
+    "1.1.ii",
+    "1.2.i",
+    "2.1.iii",
+    "2.1.iv",
+    "2.1.v",
+    "2.1.vi",
+    "2.1.vii",
+    "2.1.viii",
+    "4.5.i",
+    "4.5.ii",
+    "4.5.iii",
+    "4.8.iii",
+    "4.8.v",
+    "5.2.ii"
+  ],
+  "optional_note": "シラバスでグレー網掛（オプション・出題対象外）の小項目。識別子のみ記録する。学び直しには要るので optional: true として扱い、削除はしない。"
 }
