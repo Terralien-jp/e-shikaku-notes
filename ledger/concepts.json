@@ -1,7 +1,9 @@
 {
   "exam": "E資格",
-  "syllabus_version": "TBD",
-  "note": "この台帳は Phase 0 で JDLA 公式シラバスの項目名から機械生成する。現在は形の見本1件のみ。",
+  "ledger_status": "bootstrap",
+  "syllabus_version": "E2026#2",
+  "syllabus_source": "https://www.jdla.org/certificate/engineer/",
+  "note": "Phase 0 で公式シラバスから概念を洗い出して concepts を埋め、ledger_status を complete にする。手順は docs/phase0-ledger-brief.md。",
   "areas": [
     "応用数学",
     "機械学習",
@@ -14,7 +16,9 @@
       "concept": "誤差逆伝播法",
       "area": "深層学習",
       "tier": "A",
-      "syllabus_refs": [],
+      "syllabus_refs": [
+        "TBD"
+      ],
       "status": "todo"
     }
   ]

@@ -11,6 +11,18 @@
 | `syllabus_refs` | ✅ | 対応するシラバス項目の識別子。**公式の文言は入れない**（項目を指すIDのみ） |
 | `status` | ✅ | `todo` / `drafting` / `done` |
 
+## トップレベル
+
+| フィールド | 内容 |
+|---|---|
+| `exam` | `E資格` 固定 |
+| `ledger_status` | `bootstrap`（作成途中・網羅性の検査を WARN に落とす） / `complete` |
+| `syllabus_version` | 対象シラバスの版。例 `E2026#2` |
+| `syllabus_source` | 参照した JDLA 公式ページのURL |
+| `areas` | 4区分固定。増やさない |
+
+検証: `python3 scripts/validate_ledger.py`（fail-closed）。作り方は [`docs/phase0-ledger-brief.md`](../docs/phase0-ledger-brief.md)。
+
 ## Tier の決め方
 
 出題比重ではなく**「間違えたときに他へ波及するか」**で決めます。誤差逆伝播を取り違えると
