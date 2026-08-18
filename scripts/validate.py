@@ -182,6 +182,43 @@ def check_visual_gap(stem: str, body: str) -> list[Finding]:
     return out
 
 
+# raw HTML ブロック（囲み・想起チェック）の中は、開きタグの直後に空行が無いと
+# CommonMark が中身をまるごと生の HTML として扱う＝Markdown も数式も解釈されない。
+# 実害（2026-08-18）: caution / details に書いた $...$ が、KaTeX を通らず
+# 「$\varepsilon$」の生文字のままページに出た。ERROR 0 のまま壊れていたので機械で塞ぐ。
+RAW_HTML_OPEN = re.compile(r'^\s*<(div class="(?:analogy|caution)"|details class="recall")>\s*$')
+RAW_HTML_CLOSE = re.compile(r'^\s*</(div|details)>\s*$')
+
+
+def check_raw_html_blocks(stem: str, body: str) -> list[Finding]:
+    """囲み・想起チェックの中身が Markdown として解釈される形になっているか。"""
+    out: list[Finding] = []
+    lines = strip_code_blocks(body).splitlines()
+    for i, line in enumerate(lines):
+        if RAW_HTML_OPEN.match(line):
+            nxt = lines[i + 1] if i + 1 < len(lines) else ""
+            if nxt.strip() and not nxt.lstrip().startswith("<summary"):
+                out.append(Finding("ERROR", "RAW_HTML_TIGHT",
+                                   f"{stem}: {i+1}行目 の囲みは開きタグの直後に空行が必要です"
+                                   "（無いと中身の Markdown と数式が解釈されません）"))
+        if RAW_HTML_CLOSE.match(line):
+            prv = lines[i - 1] if i > 0 else ""
+            if prv.strip():
+                out.append(Finding("ERROR", "RAW_HTML_TIGHT",
+                                   f"{stem}: {i+1}行目 の閉じタグの直前に空行が必要です"))
+        if "</summary>" in line:
+            nxt = lines[i + 1] if i + 1 < len(lines) else ""
+            if nxt.strip():
+                out.append(Finding("ERROR", "RAW_HTML_TIGHT",
+                                   f"{stem}: {i+1}行目 </summary> の直後に空行が必要です"
+                                   "（無いと答えの Markdown と数式が解釈されません）"))
+        if line.lstrip().startswith("<summary") and "$" in line:
+            out.append(Finding("ERROR", "MATH_IN_SUMMARY",
+                               f"{stem}: {i+1}行目 <summary> の中の数式は描画されません"
+                               "（言葉で書くか、本文側に出す）"))
+    return out
+
+
 def check_internal_links(stem: str, body: str, existing: set[str]) -> list[Finding]:
     out: list[Finding] = []
     for m in re.finditer(r"/learn/e-shikaku/([a-z0-9-]+)/", body):
@@ -306,6 +343,7 @@ def validate(paths: list[Path], *, check_links_: bool, check_code_: bool) -> lis
         findings += check_sources(stem, fm)
         findings += check_h2(stem, body)
         findings += check_visual_gap(stem, body)
+        findings += check_raw_html_blocks(stem, body)
         findings += check_internal_links(stem, body, existing)
         findings += check_math(stem, body)
         if check_code_:
