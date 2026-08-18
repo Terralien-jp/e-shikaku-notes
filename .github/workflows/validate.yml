@@ -44,3 +44,8 @@ jobs:
 
       - name: validate notes
         run: python3 scripts/validate.py --check-code
+
+      # 出典カードは未作成でも落とさない（収集中は 0/112 が正常）。
+      # 見るのは「作られたカードが規約どおりか」＝ドメイン許可リスト・why の長さ・抜粋の不保存。
+      - name: validate source cards
+        run: python3 scripts/validate_sources.py
