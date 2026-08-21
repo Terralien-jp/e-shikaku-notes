@@ -79,7 +79,7 @@ print(D, loss)
 |---|---|
 | Siamese network | 2入力を共有重みの写像へ通す構成。損失そのものの名前ではありません |
 | contrastive loss | 類似・非類似のペアに距離制約を課す損失 |
-| triplet loss | 基準・正例・負例の三つ組で相対距離を学ぶ別形式です |
+| [triplet loss](/learn/e-shikaku/metric-learning-triplets/) | 基準・正例・負例の三つ組で相対距離を学ぶ別形式です |
 | 分類損失 | クラス確率を当てる損失で、距離のマージンを直接指定しません |
 
 ## 想起チェック

@@ -87,8 +87,8 @@ assert np.array_equal(cm, [[0, 2], [1, 1]])
 | 用語 | 切り分け |
 |---|---|
 | 正解率 | TPとTNの割合だけで、FPとFNの向きを区別しない |
-| precision | 予測陽性の中で当たった割合。表ではTPとFPを使う |
-| recall | 真の陽性をどれだけ拾ったか。表ではTPとFNを使う |
+| [precision](/learn/e-shikaku/precision-recall-f1/) | 予測陽性の中で当たった割合。表ではTPとFPを使う |
+| [recall](/learn/e-shikaku/precision-recall-f1/) | 真の陽性をどれだけ拾ったか。表ではTPとFNを使う |
 | 多クラス行列 | 各クラス間の混同を一つの行列で数える |
 
 ## 想起チェック

@@ -90,7 +90,7 @@ print({name: value.shape for name, value in outputs.items()})
 | Fast R-CNN | 候補領域は外部から与えられ、共有特徴からRoIを処理する。Faster R-CNNは候補生成もRPNで学習する |
 | Faster R-CNN | RPNと分類・矩形回帰の二段階。マスク分岐は標準構成に含めない |
 | Mask R-CNN | Faster R-CNNにマスク分岐を加え、RoIAlignで空間位置を保つ |
-| semantic segmentation | クラスごとの画素分類で、同じクラスの個体を分けない。Mask R-CNNはRoI単位のインスタンスを分ける |
+| [semantic segmentation](/learn/e-shikaku/semantic-segmentation/) | クラスごとの画素分類で、同じクラスの個体を分けない。Mask R-CNNはRoI単位のインスタンスを分ける |
 
 ## 想起チェック
 

@@ -409,10 +409,17 @@ def check_links(stem: str, fm: str) -> list[Finding]:
 
 # ------------------------------------------------------------------ 実行
 
-# 地の文の分量。表・コード・数式ブロック・生HTMLを除いて数える（表を足して
-# 字数を稼いだものを通さないため）。規約の下限は docs/writer-brief.md 側にあり、
-# ここでは「規約の下限」を WARN、「明らかな未達」を ERROR にする。
-PROSE_FLOOR = {"A": (1800, 1400), "B": (900, 700), "C": (400, 300)}
+# 地の文の分量。表・コード・数式ブロック・生HTMLを除いて数える。
+#
+# ★2026-08-22 変更: Tier ごとの下限（A=1800 / B=900 / C=400）を機械の判定から外した。
+# 分量は中身の代理指標にならない。1,000字で説明し切れているノートは問題がなく、
+# 1万字あっても中身が無ければ意味がない。実際、この下限を満たすために既存段落を
+# 言い換えただけの水増し段落が6本で生まれ、初稿より密度が落ちた（PR #25・その後 revert）。
+#
+# ここで機械が見るのは「書きかけを公開しないこと」だけにする。STUB_FLOOR は
+# 見出しだけ・1段落だけといった明らかな未完成を止めるための値であって、目標値ではない。
+# Tier ごとの目安は docs/writer-brief.md に残すが、それは書き手が判断するもの。
+STUB_FLOOR = 300
 
 
 def prose_length(body: str) -> int:
@@ -425,17 +432,11 @@ def prose_length(body: str) -> int:
 
 
 def check_length(stem: str, body: str, tier: str) -> list[Finding]:
-    floor = PROSE_FLOOR.get(tier)
-    if not floor:
-        return []
-    soft, hard = floor
     n = prose_length(body)
-    if n < hard:
-        return [Finding("ERROR", "PROSE_SHORT",
-                        f"{stem}: 地の文が {n}字。Tier {tier} の下限 {soft}字に対して不足が大きすぎます")]
-    if n < soft:
-        return [Finding("WARN", "PROSE_SHORT",
-                        f"{stem}: 地の文が {n}字。Tier {tier} の下限は {soft}字です")]
+    if n < STUB_FLOOR:
+        return [Finding("ERROR", "PROSE_STUB",
+                        f"{stem}: 地の文が {n}字。書きかけの疑いがあります"
+                        f"（下限 {STUB_FLOOR}字。これは目標値ではなく未完成の検出値）")]
     return []
 
 

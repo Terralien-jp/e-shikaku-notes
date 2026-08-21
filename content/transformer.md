@@ -106,10 +106,10 @@ assert np.allclose(weights[0, 0, 1:], 0.0)
 
 | 用語 | Transformerとの切り分け |
 |---|---|
-| Self-Attention | 同じ系列から $Q,K,V$ を作る注意。TransformerはこれをMulti-Head化し、ブロックとして積む |
-| Encoder-Decoder Attention | デコーダのクエリとエンコーダ出力のキー・値を結ぶ注意。Self-Attentionとは入力元が違う |
-| RNN | 隠れ状態を時系列に渡すため直列計算になる。Transformerは注意で全位置を直接結ぶ |
-| 畳み込み | 局所的な受容野を持つ。TransformerのFFNは位置ごとの全結合で、系列位置間の混合は注意が担う |
+| [Self-Attention](/learn/e-shikaku/self-attention/) | 同じ系列から $Q,K,V$ を作る注意。TransformerはこれをMulti-Head化し、ブロックとして積む |
+| [Encoder-Decoder Attention](/learn/e-shikaku/seq2seq-and-attention/) | デコーダのクエリとエンコーダ出力のキー・値を結ぶ注意。Self-Attentionとは入力元が違う |
+| [RNN](/learn/e-shikaku/recurrent-neural-network/) | 隠れ状態を時系列に渡すため直列計算になる。Transformerは注意で全位置を直接結ぶ |
+| [畳み込み](/learn/e-shikaku/convolution-operation/) | 局所的な受容野を持つ。TransformerのFFNは位置ごとの全結合で、系列位置間の混合は注意が担う |
 | 位置エンコーディング | トークンの順序を補う入力情報。Attentionそのものやマスクとは別の機構 |
 
 ## 想起チェック

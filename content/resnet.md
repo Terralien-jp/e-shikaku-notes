@@ -107,9 +107,9 @@ ResNet を「深くすれば自動的に精度が上がる仕組み」と捉え�
 |---|---|
 | plain network | 層を単純に積む比較対象。深くすると訓練誤差まで悪化する劣化問題が現れた |
 | Highway network | ゲートで経路を制御し、ゲートにパラメータがある。ResNet の identity shortcut は常に開いていてパラメータを持たない |
-| bottleneck | ResNet の深い構成で計算量を抑えるブロック設計。残差学習そのものとは別の設計判断 |
-| projection shortcut | 次元を合わせる $W_s$。恒等ショートカットと違い、学習パラメータを追加する |
-| 過学習 | 訓練誤差は下がるのにテスト誤差が上がる現象。劣化問題は訓練誤差自体が増える |
+| [bottleneck](/learn/e-shikaku/residual-block/) | ResNet の深い構成で計算量を抑えるブロック設計。残差学習そのものとは別の設計判断 |
+| [projection shortcut](/learn/e-shikaku/residual-block/) | 次元を合わせる $W_s$。恒等ショートカットと違い、学習パラメータを追加する |
+| [過学習](/learn/e-shikaku/overfit-underfit/) | 訓練誤差は下がるのにテスト誤差が上がる現象。劣化問題は訓練誤差自体が増える |
 
 ## 想起チェック
 

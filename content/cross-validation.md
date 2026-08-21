@@ -83,7 +83,7 @@ print(round(float(np.mean(scores)), 4), round(float(np.std(scores)), 4))
 
 | 手法 | 交差検証との切り分け |
 |---|---|
-| ホールドアウト | 分割と評価が1回。安価だが分割の偶然に左右されやすい |
+| [ホールドアウト](/learn/e-shikaku/dataset-splits/) | 分割と評価が1回。安価だが分割の偶然に左右されやすい |
 | StratifiedKFold | k-fold の分類向け変形。クラス比を fold ごとに保つ |
 | TimeSeriesSplit | 時系列向け。時間順を守り、将来の観測を訓練へ入れない |
 | テストセット | 最終的な性能確認用。交差検証で何度も選択に使う評価用データとは役割が違う |

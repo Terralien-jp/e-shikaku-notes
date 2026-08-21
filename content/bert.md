@@ -91,9 +91,9 @@ print(x.shape)
 
 | 用語 | BERTとの切り分け |
 |---|---|
-| Transformerエンコーダ | BERTが採用する本体。入力列全体を双方向に自己注意へかける |
-| Transformerデコーダ | 左側の文脈だけを見る制約を置けば、次トークン生成に使える構成 |
-| GPT | 原論文で比較される一方向型のTransformer。各トークンが左側だけを参照する |
+| [Transformerエンコーダ](/learn/e-shikaku/transformer/) | BERTが採用する本体。入力列全体を双方向に自己注意へかける |
+| [Transformerデコーダ](/learn/e-shikaku/transformer/) | 左側の文脈だけを見る制約を置けば、次トークン生成に使える構成 |
+| [GPT](/learn/e-shikaku/gpt-and-rag/) | 原論文で比較される一方向型のTransformer。各トークンが左側だけを参照する |
 | MLM | BERTの事前学習タスク。モデル名や推論時の分類ヘッドではない |
 | NSP | 2文の関係を学習するもう一つの事前学習タスク。`[SEP]` そのものと同じではない |
 | ファインチューニング | 事前学習済み重みを初期値に、下流タスクの教師データで全体を調整する段階 |

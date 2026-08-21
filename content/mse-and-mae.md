@@ -82,9 +82,9 @@ assert mse(outlier) - mse(error) > mae(outlier) - mae(error)
 
 | 用語 | 切り分け |
 |---|---|
-| RMSE | MSE の平方根。目的変数と同じ単位になるが、最小化する代表値の性質は MSE と同じ |
+| [RMSE](/learn/e-shikaku/regression-metrics/) | MSE の平方根。目的変数と同じ単位になるが、最小化する代表値の性質は MSE と同じ |
 | MAE | L1 損失とも呼ばれる。外れ値の影響はMSEより小さいが、原点で滑らかでない |
-| Huber | 二乗と絶対値を誤差の大きさで接続する損失。しきい値 $\delta$ が挙動を決める |
+| [Huber](/learn/e-shikaku/regression-losses/) | 二乗と絶対値を誤差の大きさで接続する損失。しきい値 $\delta$ が挙動を決める |
 | `reduction='sum'` | 損失の種類ではなく集約方法。バッチサイズや要素数で値と勾配の尺度が変わる |
 
 ## 想起チェック

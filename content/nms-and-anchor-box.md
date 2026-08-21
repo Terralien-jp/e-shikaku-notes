@@ -98,7 +98,7 @@ assert np.array_equal(nms(boxes, scores, 0.5), np.array([0, 2]))
 
 | 用語 | NMS・アンカーボックスとの切り分け |
 |---|---|
-| IoU | 重なりを測る指標で、NMSそのものではない |
+| [IoU](/learn/e-shikaku/iou-and-map/) | 重なりを測る指標で、NMSそのものではない |
 | confidence score | 残す枠を選ぶ順位の値。重なりの大きさではない |
 | アンカーボックス | 予測前の基準枠。NMSが扱う出力枠と同一とは限らない |
 | default box | アンカーボックスと同じく予測の基準枠を指す呼び方 |

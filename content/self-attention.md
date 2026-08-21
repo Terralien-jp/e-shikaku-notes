@@ -107,11 +107,11 @@ print(np.round(weights[0], 6))
 
 | 用語 | Self-Attentionとの切り分け |
 |---|---|
-| Encoder-Decoder Attention | Qは一方の系列、K/Vは別の系列から作る。Self-Attentionは同じ系列から作る |
-| Additive Attention | QとKの相性を小さなネットワークで計算する方式。Scaled Dot-Productは内積を使う |
-| Multi-Head Attention | Self-Attentionそのものではなく、複数の射影空間で注意を並列化する拡張 |
-| Causal Attention | 自己注意に未来禁止マスクを加えた制約付きの形。全Self-Attentionが因果的とは限らない |
-| Cross-Attention | 参照元が別系列。Q/K/Vの入力元が同じかどうかで判別する |
+| [Encoder-Decoder Attention](/learn/e-shikaku/seq2seq-and-attention/) | Qは一方の系列、K/Vは別の系列から作る。Self-Attentionは同じ系列から作る |
+| [Additive Attention](/learn/e-shikaku/seq2seq-and-attention/) | QとKの相性を小さなネットワークで計算する方式。Scaled Dot-Productは内積を使う |
+| [Multi-Head Attention](/learn/e-shikaku/transformer/) | Self-Attentionそのものではなく、複数の射影空間で注意を並列化する拡張 |
+| [Causal Attention](/learn/e-shikaku/transformer/) | 自己注意に未来禁止マスクを加えた制約付きの形。全Self-Attentionが因果的とは限らない |
+| [Cross-Attention](/learn/e-shikaku/seq2seq-and-attention/) | 参照元が別系列。Q/K/Vの入力元が同じかどうかで判別する |
 
 ## 想起チェック
 

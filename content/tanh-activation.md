@@ -78,9 +78,9 @@ print("dy:", np.round(dy, 6))
 
 | 対象 | tanhとの切り分け |
 |---|---|
-| シグモイド | 出力は $(0,1)$。tanhは0中心で、原点の最大導関数が大きい |
-| ReLU | 正の側は飽和しないが、負の側で勾配が0になる。tanhは両側で飽和する |
-| LSTM/GRUのゲート | ゲートは主にシグモイド、候補値の生成はtanh。役割を混ぜない |
+| [シグモイド](/learn/e-shikaku/sigmoid-activation/) | 出力は $(0,1)$。tanhは0中心で、原点の最大導関数が大きい |
+| [ReLU](/learn/e-shikaku/relu-family/) | 正の側は飽和しないが、負の側で勾配が0になる。tanhは両側で飽和する |
+| [LSTM/GRUのゲート](/learn/e-shikaku/gated-rnn/) | ゲートは主にシグモイド、候補値の生成はtanh。役割を混ぜない |
 
 ## 想起チェック
 
