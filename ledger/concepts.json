@@ -41,7 +41,7 @@
       "syllabus_refs": [
         "1.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "knn",
@@ -52,7 +52,7 @@
       "syllabus_refs": [
         "2.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "distance-metrics",
@@ -63,7 +63,7 @@
       "syllabus_refs": [
         "2.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "learning-paradigms",
@@ -118,7 +118,7 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "dataset-splits",
@@ -129,7 +129,7 @@
       "syllabus_refs": [
         "2.1.x"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "cross-validation",
@@ -140,7 +140,7 @@
       "syllabus_refs": [
         "2.1.x"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "classification-metrics",
@@ -151,7 +151,7 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "roc-and-auc",
@@ -195,7 +195,7 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "perplexity",
