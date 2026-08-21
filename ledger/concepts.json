@@ -206,7 +206,7 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "multilayer-perceptron",
@@ -261,7 +261,7 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "activation-functions",
@@ -305,7 +305,7 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "backpropagation",
@@ -404,7 +404,7 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "pooling",
@@ -437,7 +437,7 @@
       "syllabus_refs": [
         "3.5.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "gated-rnn",
@@ -481,7 +481,7 @@
       "syllabus_refs": [
         "3.7.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "text-augmentation",
@@ -492,7 +492,7 @@
       "syllabus_refs": [
         "3.7.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "normalization-layers",
@@ -514,7 +514,7 @@
       "syllabus_refs": [
         "3.7.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "hyperparameter-tuning",
