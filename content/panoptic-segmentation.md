@@ -84,10 +84,10 @@ thing のマスクが存在する画素では、stuff のクラス 1 が車ク�
 
 | 用語 | パノプティック分割との切り分け |
 |---|---|
-| 意味分割 | クラスを画素ごとに出すが、同一クラスの個体 ID は持たない |
+| [意味分割](/learn/e-shikaku/semantic-segmentation/) | クラスを画素ごとに出すが、同一クラスの個体 ID は持たない |
 | インスタンス分割 | thing の個体を分けるが、stuff を含む全画素の統合形式ではない |
-| IoU | セグメントの重なりを測る量。PQ の SQ に使われるが PQ 全体ではない |
-| AP | 信頼度を使う instance 評価。stuff を含む PQ とは役割が異なる |
+| [IoU](/learn/e-shikaku/iou-and-map/) | セグメントの重なりを測る量。PQ の SQ に使われるが PQ 全体ではない |
+| [AP](/learn/e-shikaku/iou-and-map/) | 信頼度を使う instance 評価。stuff を含む PQ とは役割が異なる |
 
 ## 想起チェック
 

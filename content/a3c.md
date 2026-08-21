@@ -91,7 +91,7 @@ assert np.allclose(advantages, [2.12, 2.3, 1.4])
 |---|---|
 | Actor-Critic | A3Cの土台。A3Cはそこへ非同期 worker と advantage を組み合わせたもの |
 | A2C | Actor-Critic の更新を同期してまとめる実装上の対比。非同期性がA3Cとの焦点 |
-| DQN | 行動価値を学び、経験再生を使う代表例。A3Cは方策を直接更新する |
+| [DQN](/learn/e-shikaku/dqn/) | 行動価値を学び、経験再生を使う代表例。A3Cは方策を直接更新する |
 | n-step 法 | A3Cがreturnを作る時間方向の方法。A3Cという並列更新機構そのものではない |
 
 ## 想起チェック

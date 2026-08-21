@@ -77,10 +77,10 @@ print("random outputs equal:", np.allclose(x @ W_rand[:, 0], x @ W_rand[:, 1]))
 
 | 用語 | 切り分け |
 |---|---|
-| Xavier / Glorot | tanhやsigmoidなど、入出力のスケールを両側から見る初期化の系統 |
-| He | ReLU系の整流で失われる側を考慮する初期化の系統 |
+| [Xavier / Glorot](/learn/e-shikaku/xavier-and-he-init/) | tanhやsigmoidなど、入出力のスケールを両側から見る初期化の系統 |
+| [He](/learn/e-shikaku/xavier-and-he-init/) | ReLU系の整流で失われる側を考慮する初期化の系統 |
 | バイアス初期化 | 重みの対称性を壊す役割とは別に、オフセットを決める設定 |
-| 正規化層 | 学習中に活性値のスケールを調整する層。初期化の目的と重なる部分があるが同じ操作ではない |
+| [正規化層](/learn/e-shikaku/normalization-layers/) | 学習中に活性値のスケールを調整する層。初期化の目的と重なる部分があるが同じ操作ではない |
 
 ## 想起チェック
 

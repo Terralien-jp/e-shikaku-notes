@@ -99,8 +99,8 @@ print("max error:", abs(dx - analytic))
 |---|---|
 | Dense layer | 前の全層出力を結合する接続。残差ブロックの加算とは結合方法が違う |
 | Highway network | ゲートで経路の通過量を制御する。恒等ショートカットを単純加算する残差形とは別 |
-| Projection shortcut | 次元を合わせるためのショートカット側の写像。Residual Block全体の名前ではない |
-| Bottleneck block | 主経路を縮小・演算・復元する内部構成。残差加算の有無とは別の分類軸 |
+| [Projection shortcut](/learn/e-shikaku/resnet/) | 次元を合わせるためのショートカット側の写像。Residual Block全体の名前ではない |
+| [Bottleneck block](/learn/e-shikaku/resnet/) | 主経路を縮小・演算・復元する内部構成。残差加算の有無とは別の分類軸 |
 | Skip connection | 層を飛び越す接続の一般名。恒等写像に限定されず、Residual Blockはその具体例 |
 
 ## 想起チェック

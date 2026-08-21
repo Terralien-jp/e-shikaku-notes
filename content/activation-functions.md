@@ -131,11 +131,11 @@ PyTorch では `nn.ReLU` `nn.LeakyReLU` `nn.ELU` `nn.GELU` `nn.SiLU`（Swish に
 
 | 用語 | 活性化関数との関係 |
 |---|---|
-| softmax | 出力層専用。**隠れ層の活性化関数の一覧には並べない**。多クラス分類でクラス間の確率を正規化する関数で、単一素子ではなくベクトル全体に作用する |
-| バッチ正規化 | 活性化関数の**前**に入力の分布を整える手法。関数そのものではなく前処理層 |
-| dying ReLU | 現象の名前であって関数の名前ではない。原因は ReLU の負領域で導関数が0になること |
-| PReLU | Leaky ReLU の一般化。傾き $\alpha$ が固定値ではなく学習パラメータになったもの |
-| GELU / Swish | 別々に提案された関数だが、滑らかな非単調・自己ゲート型という形が近い。式は異なる（$z\Phi(z)$ と $z\sigma(z)$） |
+| [softmax](/learn/e-shikaku/softmax-and-onehot/) | 出力層専用。**隠れ層の活性化関数の一覧には並べない**。多クラス分類でクラス間の確率を正規化する関数で、単一素子ではなくベクトル全体に作用する |
+| [バッチ正規化](/learn/e-shikaku/normalization-layers/) | 活性化関数の**前**に入力の分布を整える手法。関数そのものではなく前処理層 |
+| [dying ReLU](/learn/e-shikaku/relu-family/) | 現象の名前であって関数の名前ではない。原因は ReLU の負領域で導関数が0になること |
+| [PReLU](/learn/e-shikaku/relu-family/) | Leaky ReLU の一般化。傾き $\alpha$ が固定値ではなく学習パラメータになったもの |
+| [GELU / Swish](/learn/e-shikaku/relu-family/) | 別々に提案された関数だが、滑らかな非単調・自己ゲート型という形が近い。式は異なる（$z\Phi(z)$ と $z\sigma(z)$） |
 
 ## 想起チェック
 

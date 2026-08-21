@@ -154,6 +154,39 @@ def check(data: dict) -> list[Finding]:
         if exists and c.get("status") == "todo":
             out.append(Finding("WARN", "STATUS_DRIFT", f"{tag}: 本文があるのに status=todo のままです"))
 
+    # related（関連ノート）。任意項目だが、書いてあるなら壊れていないこと。
+    # ★リンク先の実在は機械で決まるので ERROR。「何本張るべきか」は編集判断なので
+    #   ここでは数を要求しない（分量の下限を機械で要求して水増しが生まれた反省と同じ）。
+    for c in concepts:
+        tag = c.get("slug") or "?"
+        rel = c.get("related")
+        if rel is None:
+            continue
+        if not isinstance(rel, list):
+            out.append(Finding("ERROR", "RELATED_SHAPE", f"{tag}: related は配列です"))
+            continue
+        seen_rel: set[str] = set()
+        for r in rel:
+            if not isinstance(r, dict) or "slug" not in r or "why" not in r:
+                out.append(Finding("ERROR", "RELATED_SHAPE",
+                                   f"{tag}: related の各要素は slug と why を持つオブジェクトです"))
+                continue
+            t = str(r["slug"])
+            if t == c.get("slug"):
+                out.append(Finding("ERROR", "RELATED_SELF", f"{tag}: 自分自身が related に入っています"))
+            if t not in seen_slugs:
+                out.append(Finding("ERROR", "RELATED_BROKEN",
+                                   f"{tag}: related の {t} は台帳にありません"))
+            if t in seen_rel:
+                out.append(Finding("ERROR", "RELATED_DUP", f"{tag}: related に {t} が重複しています"))
+            seen_rel.add(t)
+            why = str(r["why"]).strip()
+            if not why:
+                out.append(Finding("ERROR", "RELATED_WHY", f"{tag}: {t} の why が空です"))
+            elif len(why) > 60:
+                out.append(Finding("ERROR", "RELATED_WHY",
+                                   f"{tag}: {t} の why が長すぎます（{len(why)}字・上限60字）"))
+
     for area, n in per_area.items():
         if n == 0:
             out.append(Finding(cover, "AREA_COVERAGE", f"区分「{area}」の概念が0件です（取りこぼしの疑い）"))

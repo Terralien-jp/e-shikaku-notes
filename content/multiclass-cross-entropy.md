@@ -88,9 +88,9 @@ print(np.round(p.sum(), 6), round(loss, 6), np.round(grad, 6))
 
 | 用語 | 切り分け |
 |---|---|
-| softmax | logitsをクラス確率へ変換する処理。損失そのものではありません |
+| [softmax](/learn/e-shikaku/softmax-and-onehot/) | logitsをクラス確率へ変換する処理。損失そのものではありません |
 | 多クラス交差エントロピー | 正解分布と予測分布を比較する損失。softmaxと組み合わせて使います |
-| 平均二乗誤差 | 出力の差の二乗を測る損失。確率分類の勾配の形は同じになりません |
+| [平均二乗誤差](/learn/e-shikaku/mse-and-mae/) | 出力の差の二乗を測る損失。確率分類の勾配の形は同じになりません |
 | CrossEntropyLoss | PyTorchのAPI。logits入力から交差エントロピーを計算し、整数 indexまたは確率形式のtargetを受けます |
 
 ## 想起チェック

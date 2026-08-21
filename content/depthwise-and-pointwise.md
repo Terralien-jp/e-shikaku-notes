@@ -87,7 +87,7 @@ print(standard, separable, separable / standard)
 
 | 用語 | 分離畳み込みとの切り分け |
 |---|---|
-| 標準畳み込み | 空間処理とチャネル混合を1つの$K×K$カーネルで同時に行う |
+| [標準畳み込み](/learn/e-shikaku/convolution-operation/) | 空間処理とチャネル混合を1つの$K×K$カーネルで同時に行う |
 | depthwise convolution | 入力チャネルごとに独立した空間フィルタを適用する前半 |
 | pointwise convolution | 1×1畳み込みでチャネルを別の数へ射影する後半 |
 | spatially separable convolution | $K×K$を$K×1$と$1×K$へ分ける別の分解。depthwiseとは軸が違う |

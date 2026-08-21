@@ -85,10 +85,10 @@ print(theta)
 
 | 用語 | 勾配を評価する位置 | 見分けるポイント |
 |---|---|---|
-| 通常のモメンタム | 現在の $\theta_t$ | 現在の勾配に過去の速度を組み合わせる |
+| [通常のモメンタム](/learn/e-shikaku/momentum-optimization/) | 現在の $\theta_t$ | 現在の勾配に過去の速度を組み合わせる |
 | Nesterov加速 | 先読みした $\widetilde{\theta}_t$ | 勢いを加えた仮の位置で勾配を取る |
-| SGD | 現在の $\theta_t$ | 速度の蓄積を使わず、勾配だけで更新する |
-| Adam系 | 実装ごとの評価位置 | 一次・二次モーメントを使う別系統の更新則 |
+| [SGD](/learn/e-shikaku/sgd-and-minibatch/) | 現在の $\theta_t$ | 速度の蓄積を使わず、勾配だけで更新する |
+| [Adam系](/learn/e-shikaku/adam-family/) | 実装ごとの評価位置 | 一次・二次モーメントを使う別系統の更新則 |
 
 ## 想起チェック
 

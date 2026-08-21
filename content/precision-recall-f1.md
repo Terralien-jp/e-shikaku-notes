@@ -87,10 +87,10 @@ print(precision, recall, f1)
 
 | 指標・概念 | 適合率・再現率・F1との違い |
 |---|---|
-| 正解率 | 全サンプル中の正解割合。陽性が少ないと多数派の正解だけで高くなる |
-| 適合率 | 予測陽性を基準にした指標。FPが増えると下がる |
-| 再現率 | 実陽性を基準にした指標。FNが増えると下がる |
-| F1値 | 適合率と再現率を一つにまとめるが、誤検知と見逃しの費用そのものではない |
+| [正解率](/learn/e-shikaku/classification-metrics/) | 全サンプル中の正解割合。陽性が少ないと多数派の正解だけで高くなる |
+| [適合率](/learn/e-shikaku/classification-metrics/) | 予測陽性を基準にした指標。FPが増えると下がる |
+| [再現率](/learn/e-shikaku/classification-metrics/) | 実陽性を基準にした指標。FNが増えると下がる |
+| [F1値](/learn/e-shikaku/classification-metrics/) | 適合率と再現率を一つにまとめるが、誤検知と見逃しの費用そのものではない |
 
 scikit-learnの `classification_report` はクラスごとの適合率・再現率・F1値と support（正解データ中の各クラスの件数）をまとめます。二値分類でも、どちらを陽性クラスとして報告したかを確認しないと、同じ予測から別の結論になります。ゼロ件の予測陽性などで分母が0になる場合は、実装の `zero_division` 設定も確認します。
 

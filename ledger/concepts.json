@@ -19,7 +19,21 @@
       "syllabus_refs": [
         "1.2.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "likelihood-and-map",
+          "why": "尤度からMAP推定へ進み、事前分布と正則化の対応を具体化できる"
+        },
+        {
+          "slug": "bayesian-inference",
+          "why": "一点推定の背後にある事後分布の更新を学び、推定の見方を広げられる"
+        },
+        {
+          "slug": "divergence-measures",
+          "why": "尤度最大化と分布間距離の最小化がどう結び付くかを確認できる"
+        }
+      ]
     },
     {
       "slug": "entropy-and-information",
@@ -30,7 +44,21 @@
       "syllabus_refs": [
         "1.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "divergence-measures",
+          "why": "エントロピーから導いたKLやJSが分布比較でどう使われるか分かる"
+        },
+        {
+          "slug": "multiclass-cross-entropy",
+          "why": "交差エントロピーがsoftmax分類の損失になる理由を実装まで繋げられる"
+        },
+        {
+          "slug": "parameter-estimation",
+          "why": "負の対数尤度と損失の関係から、情報量を推定問題へ応用できる"
+        }
+      ]
     },
     {
       "slug": "divergence-measures",
@@ -41,7 +69,21 @@
       "syllabus_refs": [
         "1.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "entropy-and-information",
+          "why": "KLダイバージェンスの定義を情報量とエントロピーから読み直せる"
+        },
+        {
+          "slug": "kl-and-js-divergence",
+          "why": "KLの向きとJSの対称性を掘り下げ、用途ごとの違いを比較できる"
+        },
+        {
+          "slug": "parameter-estimation",
+          "why": "尤度最大化がKL最小化として見られる推定上の意味を確認できる"
+        }
+      ]
     },
     {
       "slug": "knn",
@@ -52,7 +94,21 @@
       "syllabus_refs": [
         "2.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "distance-metrics",
+          "why": "近さの定義となる距離尺度を選び、k近傍法の予測挙動を理解できる"
+        },
+        {
+          "slug": "nearest-neighbor-search",
+          "why": "近い訓練例を探す処理を、精度と速度のトレードオフから設計できる"
+        },
+        {
+          "slug": "curse-of-dimensionality",
+          "why": "次元増加で近傍が疎になり、k近傍法が不安定になる理由を掴める"
+        }
+      ]
     },
     {
       "slug": "distance-metrics",
@@ -63,7 +119,21 @@
       "syllabus_refs": [
         "2.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "norms-and-correlations",
+          "why": "距離の基礎となるノルムと、相関を使う場面との違いを整理できる"
+        },
+        {
+          "slug": "knn",
+          "why": "選んだ距離尺度が近傍ベースの分類・回帰へどう影響するか確認できる"
+        },
+        {
+          "slug": "curse-of-dimensionality",
+          "why": "高次元で距離の差が薄れ、尺度選択が難しくなる背景を理解できる"
+        }
+      ]
     },
     {
       "slug": "learning-paradigms",
@@ -74,7 +144,21 @@
       "syllabus_refs": [
         "2.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "semi-self-supervised-learning",
+          "why": "教師なし情報を活用する半教師あり・自己教師ありの位置付けを深められる"
+        },
+        {
+          "slug": "transfer-learning",
+          "why": "学習済み表現を別タスクへ再利用する学習 paradigm の発展を学べる"
+        },
+        {
+          "slug": "generative-discriminative-models",
+          "why": "教師あり予測とデータ生成を、学習する確率分布の違いで比較できる"
+        }
+      ]
     },
     {
       "slug": "generalization-error",
@@ -85,7 +169,21 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "bias-variance",
+          "why": "汎化誤差を推定量のバイアスと分散へ分解し、原因を分析できる"
+        },
+        {
+          "slug": "overfit-underfit",
+          "why": "訓練誤差と未知データの差から、汎化を損なう容量の問題を判定できる"
+        },
+        {
+          "slug": "cross-validation",
+          "why": "未知データ上の誤差を複数分割で推定し、評価の偶然性を抑えられる"
+        }
+      ]
     },
     {
       "slug": "bias-variance",
@@ -96,7 +194,21 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "generalization-error",
+          "why": "バイアスとバリアンスの和を、未知データでの誤差として位置付けられる"
+        },
+        {
+          "slug": "overfit-underfit",
+          "why": "分散の増大やバイアスの増大が過学習・未学習に対応するか確認できる"
+        },
+        {
+          "slug": "norm-penalty",
+          "why": "モデルの自由度を抑えて分散を下げる正則化の働きを具体的に学べる"
+        }
+      ]
     },
     {
       "slug": "overfit-underfit",
@@ -107,7 +219,21 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "generalization-error",
+          "why": "訓練誤差ではなく未知データの誤差を重視する理由を理論面から補える"
+        },
+        {
+          "slug": "cross-validation",
+          "why": "一つの検証分割に依存せず、過学習を含むモデル選択を評価できる"
+        },
+        {
+          "slug": "early-stopping",
+          "why": "検証誤差が悪化する前に学習を止める実践的な対処を学べる"
+        }
+      ]
     },
     {
       "slug": "curse-of-dimensionality",
@@ -118,7 +244,21 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "distance-metrics",
+          "why": "高次元で距離や近さの意味が崩れるため、尺度の性質から原因を追える"
+        },
+        {
+          "slug": "knn",
+          "why": "データが疎になると近傍法の局所性が効きにくくなる過程を確認できる"
+        },
+        {
+          "slug": "nearest-neighbor-search",
+          "why": "高次元の探索で厳密検索が重くなる問題を、計算方法と結び付けられる"
+        }
+      ]
     },
     {
       "slug": "dataset-splits",
@@ -129,7 +269,21 @@
       "syllabus_refs": [
         "2.1.x"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "train-validation-test",
+          "why": "訓練・検証・テストの役割分担を、漏洩を防ぐ運用手順まで具体化できる"
+        },
+        {
+          "slug": "cross-validation",
+          "why": "限られた訓練データを複数分割して性能を見積もる方法へ進める"
+        },
+        {
+          "slug": "generalization-error",
+          "why": "分割したテスト誤差を未知データの汎化誤差の推定に使う理由が分かる"
+        }
+      ]
     },
     {
       "slug": "cross-validation",
@@ -140,7 +294,21 @@
       "syllabus_refs": [
         "2.1.x"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "dataset-splits",
+          "why": "交差検証で繰り返す訓練・評価分割の基本設計を先に確認できる"
+        },
+        {
+          "slug": "hyperparameter-tuning",
+          "why": "検証値を使ってハイパーパラメータを選ぶ手順へ自然に発展できる"
+        },
+        {
+          "slug": "overfit-underfit",
+          "why": "分割を繰り返してもモデル選択自体が過適合する危険を理解できる"
+        }
+      ]
     },
     {
       "slug": "classification-metrics",
@@ -151,7 +319,21 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "confusion-matrix",
+          "why": "TP・FP・FN・TNから各分類指標がどう計算されるかを確認できる"
+        },
+        {
+          "slug": "precision-recall-f1",
+          "why": "誤検知と見落としの重みで適合率・再現率を選ぶ判断へ進める"
+        },
+        {
+          "slug": "roc-and-auc",
+          "why": "閾値を動かした分類器の順位性能をROCとAUCで評価する方法を学べる"
+        }
+      ]
     },
     {
       "slug": "roc-and-auc",
@@ -162,7 +344,21 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "confusion-matrix",
+          "why": "閾値ごとのTPRとFPRが混同行列のどの要素から出るか分かる"
+        },
+        {
+          "slug": "precision-recall-f1",
+          "why": "ROCと異なり不均衡データで適合率・再現率を見る理由を比較できる"
+        },
+        {
+          "slug": "classification-metrics",
+          "why": "目的や誤りのコストに応じてROC以外の指標も選ぶ視点を得られる"
+        }
+      ]
     },
     {
       "slug": "iou-and-map",
@@ -173,7 +369,21 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "object-detection-basics",
+          "why": "IoUやmAPが検出処理のどこで使われるかを一連の流れで理解できる"
+        },
+        {
+          "slug": "nms-and-anchor-box",
+          "why": "検出枠の重複除去とアンカーがIoU判定にどう関わるかを確認できる"
+        },
+        {
+          "slug": "precision-recall-f1",
+          "why": "APの基礎となる適合率と再現率の曲線を指標として読み解ける"
+        }
+      ]
     },
     {
       "slug": "regression-metrics",
@@ -184,7 +394,21 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "regression-losses",
+          "why": "評価指標と学習時の損失が何を推定し外れ値にどう反応するかを結び付けられる"
+        },
+        {
+          "slug": "mse-and-mae",
+          "why": "代表的な二乗誤差と絶対誤差の性質を指標選択の具体例として比較できる"
+        },
+        {
+          "slug": "generalization-error",
+          "why": "手元の回帰誤差を未知データでの性能として解釈する視点を補える"
+        }
+      ]
     },
     {
       "slug": "confusion-matrix",
@@ -195,7 +419,21 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "classification-metrics",
+          "why": "行列の各セルから正解率など複数指標を組み立てる全体像が分かる"
+        },
+        {
+          "slug": "precision-recall-f1",
+          "why": "TP・FP・FNから適合率と再現率、F1値を計算する手順を確認できる"
+        },
+        {
+          "slug": "multiclass-averaging",
+          "why": "多クラス時にクラス別の指標をどう平均するかの違いを理解できる"
+        }
+      ]
     },
     {
       "slug": "perplexity",
@@ -206,7 +444,17 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "autoregressive-generation",
+          "why": "次トークンの尤度を積み重ねてパープレキシティを得る生成過程が分かる"
+        },
+        {
+          "slug": "entropy-and-information",
+          "why": "平均負の対数尤度とエントロピー、交差エントロピーの関係を整理できる"
+        }
+      ]
     },
     {
       "slug": "multilayer-perceptron",
@@ -217,7 +465,21 @@
       "syllabus_refs": [
         "3.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "weights-and-biases",
+          "why": "各全結合層が重みとバイアスで入力を変換する仕組みを確認できる"
+        },
+        {
+          "slug": "activation-functions",
+          "why": "隠れ層に非線形性を入れる理由と表現力への効果を理解できる"
+        },
+        {
+          "slug": "backpropagation",
+          "why": "多層の全パラメータを連鎖律で学習する勾配計算の流れへ進める"
+        }
+      ]
     },
     {
       "slug": "regression-losses",
@@ -228,7 +490,21 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "mse-and-mae",
+          "why": "二乗誤差と絶対誤差が外れ値や条件付き代表値に与える違いを詳しく比較できる"
+        },
+        {
+          "slug": "regression-metrics",
+          "why": "学習用の損失と最終評価用の指標を目的別に使い分けられる"
+        },
+        {
+          "slug": "parameter-estimation",
+          "why": "損失最小化が尤度最大化や推定したい統計量とどう対応するか分かる"
+        }
+      ]
     },
     {
       "slug": "binary-cross-entropy",
@@ -239,7 +515,21 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "sigmoid-activation",
+          "why": "ロジットを二値確率へ変換し二値交差エントロピーに渡す対応を理解できる"
+        },
+        {
+          "slug": "entropy-and-information",
+          "why": "二値分類損失の対数尤度を交差エントロピーとして捉え直せる"
+        },
+        {
+          "slug": "multiclass-cross-entropy",
+          "why": "二値と多クラスで出力形式や確率化の方法がどう変わるか対比できる"
+        }
+      ]
     },
     {
       "slug": "multiclass-cross-entropy",
@@ -250,7 +540,21 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "softmax-and-onehot",
+          "why": "ロジットからクラス確率を作り正解one-hotと損失を計算する流れが分かる"
+        },
+        {
+          "slug": "entropy-and-information",
+          "why": "多クラス損失の式を交差エントロピーと情報量の言葉で説明できる"
+        },
+        {
+          "slug": "binary-cross-entropy",
+          "why": "クラス数に応じた出力層と損失の選択を二値の場合と比較できる"
+        }
+      ]
     },
     {
       "slug": "special-classification-loss",
@@ -261,7 +565,21 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "multiclass-cross-entropy",
+          "why": "標準的な多クラス交差エントロピーを基準に特殊損失の狙いを比較できる"
+        },
+        {
+          "slug": "binary-cross-entropy",
+          "why": "二値分類の標準損失で起きる偏りを出発点として調整の必要性を理解できる"
+        },
+        {
+          "slug": "classification-metrics",
+          "why": "難例やクラス不均衡への対策が評価指標の改善に結び付くか確認できる"
+        }
+      ]
     },
     {
       "slug": "activation-functions",
@@ -272,7 +590,21 @@
       "syllabus_refs": [
         "3.1.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "weights-and-biases",
+          "why": "活性化関数の前にある線形変換とパラメータの役割を押さえられる"
+        },
+        {
+          "slug": "sigmoid-activation",
+          "why": "代表的な飽和型関数の勾配と二値出力での使い道を具体的に学べる"
+        },
+        {
+          "slug": "relu-family",
+          "why": "ReLUの勾配消失やdying ReLUを派生関数との違いから比較できる"
+        }
+      ]
     },
     {
       "slug": "sgd-and-minibatch",
@@ -283,7 +615,21 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "gradient-descent",
+          "why": "バッチサイズを変える前に勾配と学習率による基本更新則を理解できる"
+        },
+        {
+          "slug": "momentum-optimization",
+          "why": "ミニバッチ勾配の揺らぎを過去の更新方向で抑える発展手法へ進める"
+        },
+        {
+          "slug": "distributed-deep-learning",
+          "why": "データを分散して勾配を集約すると実効バッチが変わる理由を確認できる"
+        }
+      ]
     },
     {
       "slug": "momentum-optimization",
@@ -294,7 +640,21 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "gradient-descent",
+          "why": "通常の勾配降下法に速度項を加えるというモメンタムの出発点を確認できる"
+        },
+        {
+          "slug": "nesterov-acceleration",
+          "why": "先読み位置で勾配を計算するNesterov法との補正の違いを対比できる"
+        },
+        {
+          "slug": "pathological-curvature",
+          "why": "細長い谷で振動が起きる原因とモメンタムが効く理由を結び付けられる"
+        }
+      ]
     },
     {
       "slug": "pathological-curvature",
@@ -305,7 +665,21 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "gradient-descent",
+          "why": "曲率差によって勾配降下の進行方向と学習率が難しくなる理由を確認できる"
+        },
+        {
+          "slug": "momentum-optimization",
+          "why": "狭い谷での往復を速度の蓄積がどう緩和するか具体的に理解できる"
+        },
+        {
+          "slug": "adaptive-optimizers",
+          "why": "座標ごとに実効学習率を変えて曲率差へ対処する別の発展策を学べる"
+        }
+      ]
     },
     {
       "slug": "backpropagation",
@@ -316,7 +690,21 @@
       "syllabus_refs": [
         "3.2.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "multilayer-perceptron",
+          "why": "層をまたぐ合成関数の勾配を計算する具体的なネットワーク例として読める"
+        },
+        {
+          "slug": "automatic-differentiation",
+          "why": "逆伝播で使う連鎖律を計算グラフ上で自動化する仕組みへつなげられる"
+        },
+        {
+          "slug": "activation-functions",
+          "why": "各層の活性化の導関数が逆向きの勾配へどう現れるか確認できる"
+        }
+      ]
     },
     {
       "slug": "automatic-differentiation",
@@ -327,7 +715,21 @@
       "syllabus_refs": [
         "3.2.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "backpropagation",
+          "why": "計算グラフの連鎖律が誤差逆伝播でどう勾配になるかを確認できる"
+        },
+        {
+          "slug": "gradient-descent",
+          "why": "自動微分で得た勾配をパラメータ更新へ使う流れがつながる"
+        },
+        {
+          "slug": "weights-and-biases",
+          "why": "微分する対象である重みとバイアスの役割を具体的に整理できる"
+        }
+      ]
     },
     {
       "slug": "adaptive-optimizers",
@@ -338,7 +740,21 @@
       "syllabus_refs": [
         "3.2.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "gradient-descent",
+          "why": "適応的手法が置き換える基本の勾配降下と学習率の意味を押さえられる"
+        },
+        {
+          "slug": "momentum-optimization",
+          "why": "勾配履歴を使う最適化という共通点と速度項の違いを比較できる"
+        },
+        {
+          "slug": "adam-family",
+          "why": "一次・二次モーメントを使う代表例として更新式と挙動を深掘りできる"
+        }
+      ]
     },
     {
       "slug": "parameter-initialization",
@@ -349,7 +765,21 @@
       "syllabus_refs": [
         "3.2.iv"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "weights-and-biases",
+          "why": "初期化するパラメータの役割と層ごとの個数を先に確認できる"
+        },
+        {
+          "slug": "activation-functions",
+          "why": "活性化関数の性質が初期値の分散設計に影響する理由を理解できる"
+        },
+        {
+          "slug": "xavier-and-he-init",
+          "why": "活性化関数に合わせて分散を決める具体的な初期化則へ進める"
+        }
+      ]
     },
     {
       "slug": "norm-penalty",
@@ -360,7 +790,21 @@
       "syllabus_refs": [
         "3.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "l1-and-l2-penalty",
+          "why": "ノルムペナルティの一般論からL1とL2の更新則の差へ進める"
+        },
+        {
+          "slug": "overfit-underfit",
+          "why": "ペナルティでモデル容量を抑える目的を汎化誤差の観点で確認できる"
+        },
+        {
+          "slug": "implicit-regularization",
+          "why": "明示的なペナルティと学習手続きが生む正則化を対比できる"
+        }
+      ]
     },
     {
       "slug": "dropout",
@@ -371,7 +815,21 @@
       "syllabus_refs": [
         "3.3.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "overfit-underfit",
+          "why": "ドロップアウトを過学習対策として選ぶ判断基準を先に整理できる"
+        },
+        {
+          "slug": "norm-penalty",
+          "why": "ユニット無効化と重み制約という異なる正則化を比較できる"
+        },
+        {
+          "slug": "normalization-layers",
+          "why": "訓練時の確率的変化と正規化層の統計処理を混同せずに済む"
+        }
+      ]
     },
     {
       "slug": "implicit-regularization",
@@ -382,7 +840,21 @@
       "syllabus_refs": [
         "3.3.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "norm-penalty",
+          "why": "損失へ項を足す明示的正則化と学習過程の効果を対比できる"
+        },
+        {
+          "slug": "adaptive-optimizers",
+          "why": "最適化法の選択が到達する解や汎化へ影響する道筋を理解できる"
+        },
+        {
+          "slug": "early-stopping",
+          "why": "停止時点を制御して複雑化を抑える代表的な仕組みへ進める"
+        }
+      ]
     },
     {
       "slug": "convolution-operation",
@@ -393,7 +865,21 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "feature-map-and-padding",
+          "why": "畳み込み後の空間サイズをカーネルとパディングから計算できる"
+        },
+        {
+          "slug": "receptive-field",
+          "why": "積層した畳み込みが入力のどの範囲を見るかを追跡できる"
+        },
+        {
+          "slug": "specialized-convolutions",
+          "why": "標準畳み込みを解像度やチャネル処理へ変形する発展例を学べる"
+        }
+      ]
     },
     {
       "slug": "specialized-convolutions",
@@ -404,7 +890,21 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "convolution-operation",
+          "why": "特殊化の出発点となる標準畳み込みの共有重みと局所性を確認できる"
+        },
+        {
+          "slug": "depthwise-and-pointwise",
+          "why": "空間処理とチャネル混合を分離する代表的な軽量化を具体化できる"
+        },
+        {
+          "slug": "receptive-field",
+          "why": "ダイレーションなどの変形が見える範囲へ与える効果を比較できる"
+        }
+      ]
     },
     {
       "slug": "pooling",
@@ -415,7 +915,21 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "convolution-operation",
+          "why": "特徴抽出の畳み込みと空間集約のプーリングの役割を切り分けられる"
+        },
+        {
+          "slug": "feature-map-and-padding",
+          "why": "strideや窓幅から出力特徴マップのサイズ変化を計算できる"
+        },
+        {
+          "slug": "receptive-field",
+          "why": "プーリングを重ねたとき入力上の受容範囲が広がる理由を追える"
+        }
+      ]
     },
     {
       "slug": "recurrent-neural-network",
@@ -426,7 +940,21 @@
       "syllabus_refs": [
         "3.5.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "bptt",
+          "why": "時間方向に共有した重みをどのように逆伝播するかを確認できる"
+        },
+        {
+          "slug": "gated-rnn",
+          "why": "長期依存で勾配が弱る問題をゲートでどう緩和するかへ進める"
+        },
+        {
+          "slug": "seq2seq-and-attention",
+          "why": "隠れ状態を使った系列入力から系列出力への応用につながる"
+        }
+      ]
     },
     {
       "slug": "bptt",
@@ -437,7 +965,21 @@
       "syllabus_refs": [
         "3.5.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "recurrent-neural-network",
+          "why": "時間展開して勾配を計算する対象となるRNNの状態更新を確認できる"
+        },
+        {
+          "slug": "gradient-descent",
+          "why": "時刻ごとに集めた勾配が最終的なパラメータ更新へ至る流れを押さえられる"
+        },
+        {
+          "slug": "gated-rnn",
+          "why": "長系列での勾配消失をゲートがどう緩和するかを比較できる"
+        }
+      ]
     },
     {
       "slug": "gated-rnn",
@@ -448,7 +990,21 @@
       "syllabus_refs": [
         "3.5.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "recurrent-neural-network",
+          "why": "ゲートが追加される前の隠れ状態更新と共有重みを復習できる"
+        },
+        {
+          "slug": "lstm",
+          "why": "セル状態と複数ゲートで長期記憶を制御する具体構造を学べる"
+        },
+        {
+          "slug": "gru",
+          "why": "セル状態を持たずゲートを簡略化した構造と計算量を比較できる"
+        }
+      ]
     },
     {
       "slug": "seq2seq-and-attention",
@@ -459,7 +1015,21 @@
       "syllabus_refs": [
         "3.5.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "recurrent-neural-network",
+          "why": "エンコーダとデコーダの基盤となる系列処理と隠れ状態を確認できる"
+        },
+        {
+          "slug": "self-attention",
+          "why": "注意重みをQuery・Key・Valueで計算する仕組みへ具体的に進める"
+        },
+        {
+          "slug": "transformer",
+          "why": "再帰を使わず注意機構で系列変換を行う発展モデルと対比できる"
+        }
+      ]
     },
     {
       "slug": "transformer",
@@ -470,7 +1040,21 @@
       "syllabus_refs": [
         "3.6.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "self-attention",
+          "why": "系列内結合をQuery・Key・Valueの計算から理解できる"
+        },
+        {
+          "slug": "seq2seq-and-attention",
+          "why": "従来のエンコーダ・デコーダと注意機構からの発展を比較できる"
+        },
+        {
+          "slug": "bert",
+          "why": "Transformerエンコーダを双方向の事前学習へ応用した代表例を学べる"
+        }
+      ]
     },
     {
       "slug": "image-augmentation",
@@ -481,7 +1065,21 @@
       "syllabus_refs": [
         "3.7.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "convolution-operation",
+          "why": "画像の局所特徴を学ぶ畳み込みを知ると、変換で守るべき構造が分かる"
+        },
+        {
+          "slug": "text-augmentation",
+          "why": "画像と異なり意味保存が難しいテキスト拡張と比較し、適用限界を理解できる"
+        },
+        {
+          "slug": "transfer-learning",
+          "why": "限られた画像データを拡張と事前学習で補う設計のつながりを学べる"
+        }
+      ]
     },
     {
       "slug": "text-augmentation",
@@ -492,7 +1090,21 @@
       "syllabus_refs": [
         "3.7.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "word-embedding",
+          "why": "文字列を学習可能なベクトルへ変換する前提を知ると、拡張対象を具体化できる"
+        },
+        {
+          "slug": "image-augmentation",
+          "why": "画像では保ちやすい不変性が文では壊れやすく、両者の設計差を対比できる"
+        },
+        {
+          "slug": "semi-self-supervised-learning",
+          "why": "拡張を一貫性や対照学習に組み込む発展的な使い方へ進める"
+        }
+      ]
     },
     {
       "slug": "normalization-layers",
@@ -503,7 +1115,21 @@
       "syllabus_refs": [
         "3.7.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "normalization-variants",
+          "why": "正規化する軸の違いから、バッチ正規化と層正規化の選択基準を整理できる"
+        },
+        {
+          "slug": "parameter-initialization",
+          "why": "初期化と正規化が活性値や勾配のスケールをどう保つかを続けて理解できる"
+        },
+        {
+          "slug": "recurrent-neural-network",
+          "why": "系列モデルでバッチ統計が扱いにくい理由から、層正規化の利点を確認できる"
+        }
+      ]
     },
     {
       "slug": "deep-ensemble",
@@ -514,7 +1140,21 @@
       "syllabus_refs": [
         "3.7.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "bias-variance",
+          "why": "複数モデルの予測平均が主に分散を下げる仕組みを分解して理解できる"
+        },
+        {
+          "slug": "generalization-error",
+          "why": "アンサンブルで改善したい未知データ上の誤差を、評価対象として明確にできる"
+        },
+        {
+          "slug": "model-interpretation",
+          "why": "予測を平均することで個々のモデルの根拠がどう変わるかを検討できる"
+        }
+      ]
     },
     {
       "slug": "hyperparameter-tuning",
@@ -525,7 +1165,21 @@
       "syllabus_refs": [
         "3.7.iv"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "hyperparameter-search",
+          "why": "手動調整の判断と、グリッドやベイズ最適化による探索を使い分けられる"
+        },
+        {
+          "slug": "train-validation-test",
+          "why": "検証データで設定を選び、最終テストを汚染しない手順を確認できる"
+        },
+        {
+          "slug": "early-stopping",
+          "why": "調整時の試行を検証誤差で止め、過学習を抑える実践策につながる"
+        }
+      ]
     },
     {
       "slug": "hyperparameter-search",
@@ -536,7 +1190,21 @@
       "syllabus_refs": [
         "3.7.iv"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "hyperparameter-tuning",
+          "why": "探索アルゴリズムの結果を学習率などの具体的な調整へ落とし込める"
+        },
+        {
+          "slug": "cross-validation",
+          "why": "各試行の性能を一つの分割に依存せず比較する評価方法を学べる"
+        },
+        {
+          "slug": "train-validation-test",
+          "why": "探索で検証情報を使いながら、最終テストを独立に保つ設計を確認できる"
+        }
+      ]
     },
     {
       "slug": "resnet",
@@ -547,7 +1215,21 @@
       "syllabus_refs": [
         "4.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "residual-block",
+          "why": "ResNetを構成する恒等ショートカットと残差学習の最小単位を理解できる"
+        },
+        {
+          "slug": "convolution-operation",
+          "why": "残差ブロックの主経路で使う局所特徴抽出と重み共有を復習できる"
+        },
+        {
+          "slug": "pathological-curvature",
+          "why": "深いネットで最適化が難しくなる病的曲率と、近道の効果を結び付けられる"
+        }
+      ]
     },
     {
       "slug": "vision-transformer",
@@ -558,7 +1240,21 @@
       "syllabus_refs": [
         "4.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "transformer",
+          "why": "パッチ列を処理する元の系列モデルの構造と注意機構を先に理解できる"
+        },
+        {
+          "slug": "self-attention",
+          "why": "画像パッチ間の関係を計算するQuery・Key・Valueの仕組みを具体化できる"
+        },
+        {
+          "slug": "convolution-operation",
+          "why": "局所的な畳み込みと全体を結ぶViTを対比し、設計の違いを理解できる"
+        }
+      ]
     },
     {
       "slug": "faster-rcnn-mask-rcnn",
@@ -569,7 +1265,21 @@
       "syllabus_refs": [
         "4.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "object-detection-basics",
+          "why": "候補領域・矩形回帰・IoUを先に押さえると二段階検出の流れを追える"
+        },
+        {
+          "slug": "nms-and-anchor-box",
+          "why": "RPNのアンカーと重複枠の整理が検出結果にどう関わるか分かる"
+        },
+        {
+          "slug": "semantic-segmentation",
+          "why": "Mask R-CNNの画素単位マスクが検出と異なる密な予測だと理解できる"
+        }
+      ]
     },
     {
       "slug": "yolo-and-ssd",
@@ -580,7 +1290,21 @@
       "syllabus_refs": [
         "4.2.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "object-detection-basics",
+          "why": "分類と矩形回帰、IoUやmAPの共通土台を押さえて一段階検出を読める"
+        },
+        {
+          "slug": "nms-and-anchor-box",
+          "why": "一度に出した多数の枠をNMSで整理し、SSDのアンカーを理解できる"
+        },
+        {
+          "slug": "faster-rcnn-mask-rcnn",
+          "why": "候補領域を別に作る二段階方式と速度・精度の違いを対比できる"
+        }
+      ]
     },
     {
       "slug": "fcos",
@@ -591,7 +1315,21 @@
       "syllabus_refs": [
         "4.2.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "object-detection-basics",
+          "why": "検出の分類・矩形回帰・IoUという共通処理を先に把握できる"
+        },
+        {
+          "slug": "nms-and-anchor-box",
+          "why": "アンカーを使わないFCOSと、アンカー設計に基づく検出を対比できる"
+        },
+        {
+          "slug": "yolo-and-ssd",
+          "why": "どちらも一段階検出だが、密な特徴点回帰とアンカー予測を比較できる"
+        }
+      ]
     },
     {
       "slug": "semantic-segmentation",
@@ -602,7 +1340,21 @@
       "syllabus_refs": [
         "4.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "panoptic-segmentation",
+          "why": "クラスだけでなく個体も分けるパノプティック分割へ自然に発展できる"
+        },
+        {
+          "slug": "convolution-operation",
+          "why": "画素ごとの予測に必要な局所特徴抽出と空間情報の扱いを復習できる"
+        },
+        {
+          "slug": "image-augmentation",
+          "why": "画素ラベルを壊さない変換を選ぶセグメンテーション固有の注意点を学べる"
+        }
+      ]
     },
     {
       "slug": "word-embedding",
@@ -613,7 +1365,21 @@
       "syllabus_refs": [
         "4.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "word2vec",
+          "why": "共起文脈から単語ベクトルを学ぶ代表的な具体化として理解を深められる"
+        },
+        {
+          "slug": "bert",
+          "why": "固定的な単語ベクトルから文脈依存表現へ進む発展を対比できる"
+        },
+        {
+          "slug": "self-attention",
+          "why": "文脈に応じて単語表現を更新する注意機構の役割を理解できる"
+        }
+      ]
     },
     {
       "slug": "bert",
@@ -624,7 +1390,21 @@
       "syllabus_refs": [
         "4.4.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "bert-pretraining",
+          "why": "MLMとNSPがBERTの双方向表現をどう作るか、事前学習手順を確認できる"
+        },
+        {
+          "slug": "transformer",
+          "why": "BERTのエンコーダを構成する注意機構と位置情報の土台を復習できる"
+        },
+        {
+          "slug": "word-embedding",
+          "why": "入力の単語表現から文脈依存表現へ変わるBERTの発展を比較できる"
+        }
+      ]
     },
     {
       "slug": "gpt-and-rag",
@@ -635,7 +1415,21 @@
       "syllabus_refs": [
         "4.4.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "autoregressive-generation",
+          "why": "次トークン確率の積で文章を生成するGPTの土台を確認できる"
+        },
+        {
+          "slug": "transformer",
+          "why": "系列内の依存関係を注意で扱う構造を知るとGPTの仕組みが見える"
+        },
+        {
+          "slug": "bert",
+          "why": "双方向の文脈表現を学ぶBERTと自己回帰型GPTの違いを対比できる"
+        }
+      ]
     },
     {
       "slug": "generative-discriminative-models",
@@ -646,7 +1440,17 @@
       "syllabus_refs": [
         "4.6.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "conditional-and-marginal-probability",
+          "why": "同時分布と条件付き分布の違いから生成と識別の役割を整理できる"
+        },
+        {
+          "slug": "vae",
+          "why": "潜在変数からデータを作る生成モデルとしてVAEとの違いを比べられる"
+        }
+      ]
     },
     {
       "slug": "autoencoder",
@@ -657,7 +1461,17 @@
       "syllabus_refs": [
         "4.6.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "vae",
+          "why": "入力を圧縮して復元する仕組みを確率的な生成へ拡張する道筋が分かる"
+        },
+        {
+          "slug": "generative-discriminative-models",
+          "why": "決定的な復元モデルと確率的な潜在表現の違いを対比できる"
+        }
+      ]
     },
     {
       "slug": "vae",
@@ -668,7 +1482,21 @@
       "syllabus_refs": [
         "4.6.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "autoencoder",
+          "why": "決定的な復元モデルと確率的な潜在表現の違いを対比できる"
+        },
+        {
+          "slug": "gan",
+          "why": "生成器と識別器を競わせるGANの基本構造を先に押さえられる"
+        },
+        {
+          "slug": "diffusion-model",
+          "why": "ノイズから生成する別方式とGANの学習特性を比較できる"
+        }
+      ]
     },
     {
       "slug": "gan",
@@ -679,7 +1507,21 @@
       "syllabus_refs": [
         "4.6.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "generative-discriminative-models",
+          "why": "生成器と識別器を競わせるGANの基本構造を先に押さえられる"
+        },
+        {
+          "slug": "conditional-gan",
+          "why": "条件入力で生成結果を制御するGANへの発展を理解できる"
+        },
+        {
+          "slug": "gan-stability",
+          "why": "モード崩壊や勾配消失に対する具体的な安定化策へ進める"
+        }
+      ]
     },
     {
       "slug": "conditional-gan",
@@ -690,7 +1532,21 @@
       "syllabus_refs": [
         "4.6.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "gan",
+          "why": "生成器と識別器を競わせるGANの基本構造を先に押さえられる"
+        },
+        {
+          "slug": "gan-stability",
+          "why": "モード崩壊や勾配消失に対する具体的な安定化策へ進める"
+        },
+        {
+          "slug": "diffusion-model",
+          "why": "条件付き生成を含む別の画像生成方式と性質を比較できる"
+        }
+      ]
     },
     {
       "slug": "dqn",
@@ -701,7 +1557,17 @@
       "syllabus_refs": [
         "4.7.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "learning-paradigms",
+          "why": "条件付き確率と価値関数を使う強化学習の位置付けを確認できる"
+        },
+        {
+          "slug": "a3c",
+          "why": "価値ベースのDQNと方策・価値を学ぶA3Cを対比できる"
+        }
+      ]
     },
     {
       "slug": "a3c",
@@ -712,7 +1578,21 @@
       "syllabus_refs": [
         "4.7.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "dqn",
+          "why": "経験再生を使うDQNと非同期に経験を集めるA3Cを比較できる"
+        },
+        {
+          "slug": "distributed-deep-learning",
+          "why": "複数環境を並列実行するA3Cと分散学習の接点を理解できる"
+        },
+        {
+          "slug": "learning-paradigms",
+          "why": "教師あり・教師なし・強化学習の分類軸でA3Cの位置付けを確認できる"
+        }
+      ]
     },
     {
       "slug": "transfer-learning",
@@ -723,7 +1603,21 @@
       "syllabus_refs": [
         "4.8.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "bert",
+          "why": "事前学習済み表現を別タスクへ再利用する具体例として理解できる"
+        },
+        {
+          "slug": "semi-self-supervised-learning",
+          "why": "ラベルなしデータの活用と転移学習の役割の違いを整理できる"
+        },
+        {
+          "slug": "image-augmentation",
+          "why": "ラベルを保つ変換が自己教師あり表現学習を支える仕組みを確認できる"
+        }
+      ]
     },
     {
       "slug": "semi-self-supervised-learning",
@@ -734,7 +1628,21 @@
       "syllabus_refs": [
         "4.8.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "transfer-learning",
+          "why": "教師なし表現を別タスクへ移す転移学習との接続を理解できる"
+        },
+        {
+          "slug": "metric-learning-pairs",
+          "why": "類似度を学ぶ対照学習が半・自己教師あり学習で使われる理由が分かる"
+        },
+        {
+          "slug": "image-augmentation",
+          "why": "データ拡張が一貫性学習や対照学習の正例を作る役割を確認できる"
+        }
+      ]
     },
     {
       "slug": "metric-learning-pairs",
@@ -745,7 +1653,17 @@
       "syllabus_refs": [
         "4.8.iv"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "metric-learning-triplets",
+          "why": "ペア比較を三つ組の相対比較へ拡張する設計上の違いが分かる"
+        },
+        {
+          "slug": "distance-metrics",
+          "why": "距離の定義とスケールが埋め込み学習の結果を左右する理由を確認できる"
+        }
+      ]
     },
     {
       "slug": "metric-learning-triplets",
@@ -756,7 +1674,17 @@
       "syllabus_refs": [
         "4.8.iv"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "metric-learning-pairs",
+          "why": "ペアの近さを直接学ぶ損失と三つ組の順位制約を対比できる"
+        },
+        {
+          "slug": "distance-metrics",
+          "why": "距離尺度の選択がアンカー・正例・負例の順位付けに影響する理由が分かる"
+        }
+      ]
     },
     {
       "slug": "visual-explanations",
@@ -767,7 +1695,17 @@
       "syllabus_refs": [
         "4.9.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "model-interpretation",
+          "why": "画像のどこを見たかを示す手法と一般的な寄与分析を対比できる"
+        },
+        {
+          "slug": "convolution-operation",
+          "why": "Grad-CAMの前提となる畳み込み特徴と勾配の流れを確認できる"
+        }
+      ]
     },
     {
       "slug": "model-interpretation",
@@ -778,7 +1716,17 @@
       "syllabus_refs": [
         "4.9.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "visual-explanations",
+          "why": "画像領域の可視化と特徴量単位の寄与分解を使い分けられる"
+        },
+        {
+          "slug": "classification-metrics",
+          "why": "モデルの説明と予測性能の評価を別の観点として整理できる"
+        }
+      ]
     },
     {
       "slug": "edge-model-compression",
@@ -789,7 +1737,21 @@
       "syllabus_refs": [
         "5.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "accelerator-architectures",
+          "why": "量子化や枝刈りの効果を、演算器とメモリ帯域の制約から読める"
+        },
+        {
+          "slug": "depthwise-and-pointwise",
+          "why": "軽量化で使う分離畳み込みの計算量削減を具体的に理解できる"
+        },
+        {
+          "slug": "container-virtualization",
+          "why": "軽量化したモデルをエッジ環境へ再現可能に配備する方法が分かる"
+        }
+      ]
     },
     {
       "slug": "distributed-deep-learning",
@@ -800,7 +1762,21 @@
       "syllabus_refs": [
         "5.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "parallelization-strategies",
+          "why": "勾配やモデルを何単位で分割し通信するかの設計を整理できる"
+        },
+        {
+          "slug": "sgd-and-minibatch",
+          "why": "分散で実効バッチが変わると更新則や学習率がどう変わるか分かる"
+        },
+        {
+          "slug": "accelerator-architectures",
+          "why": "複数アクセラレータの計算性能と通信律速を切り分けて考えられる"
+        }
+      ]
     },
     {
       "slug": "parallelization-strategies",
@@ -811,7 +1787,21 @@
       "syllabus_refs": [
         "5.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "distributed-deep-learning",
+          "why": "データ並列やモデル並列を実際の同期学習へ結び付けて理解できる"
+        },
+        {
+          "slug": "accelerator-architectures",
+          "why": "分割した計算を支えるGPUとメモリ階層の役割を確認できる"
+        },
+        {
+          "slug": "sgd-and-minibatch",
+          "why": "データ並列で増えるバッチサイズと勾配更新の関係を押さえられる"
+        }
+      ]
     },
     {
       "slug": "accelerator-architectures",
@@ -822,7 +1812,21 @@
       "syllabus_refs": [
         "5.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "edge-model-compression",
+          "why": "演算器やメモリの制約に合わせたモデル軽量化の判断へ進める"
+        },
+        {
+          "slug": "parallelization-strategies",
+          "why": "計算資源を複製・分割する方式とハードウェアの対応が分かる"
+        },
+        {
+          "slug": "convolution-operation",
+          "why": "アクセラレータが高速化する積和演算の基本構造を理解できる"
+        }
+      ]
     },
     {
       "slug": "container-virtualization",
@@ -833,7 +1837,17 @@
       "syllabus_refs": [
         "5.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "accelerator-architectures",
+          "why": "コンテナからGPUを使う際に、デバイスとメモリの構造を確認できる"
+        },
+        {
+          "slug": "distributed-deep-learning",
+          "why": "隔離した実行環境を複数計算資源の学習へ展開する前提が分かる"
+        }
+      ]
     },
     {
       "slug": "conditional-and-marginal-probability",
@@ -844,7 +1858,21 @@
       "syllabus_refs": [
         "1.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "bayesian-inference",
+          "why": "条件付き確率を使って事前分布から事後分布を更新する流れが分かる"
+        },
+        {
+          "slug": "likelihood-and-map",
+          "why": "観測データに対する尤度と条件付けの関係を推定問題へつなげられる"
+        },
+        {
+          "slug": "generative-discriminative-models",
+          "why": "同時分布と条件付き分布の違いをモデル設計の対比で確認できる"
+        }
+      ]
     },
     {
       "slug": "bayesian-inference",
@@ -855,7 +1883,21 @@
       "syllabus_refs": [
         "1.2.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "conditional-and-marginal-probability",
+          "why": "ベイズの定理を条件付き確率と周辺化の式から読み直せる"
+        },
+        {
+          "slug": "likelihood-and-map",
+          "why": "事後分布から一点を選ぶMAPと、尤度最大化の違いが分かる"
+        },
+        {
+          "slug": "parameter-estimation",
+          "why": "未知パラメータをデータから推定する一般的な枠組みへ広げられる"
+        }
+      ]
     },
     {
       "slug": "likelihood-and-map",
@@ -866,7 +1908,21 @@
       "syllabus_refs": [
         "1.2.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "parameter-estimation",
+          "why": "最尤推定とMAP推定を確率モデルのパラメータ推定として整理できる"
+        },
+        {
+          "slug": "bayesian-inference",
+          "why": "MAPが事前分布を含むベイズ推論の一点推定だと理解できる"
+        },
+        {
+          "slug": "l1-and-l2-penalty",
+          "why": "事前分布の選択がL1・L2正則化として現れる対応を確認できる"
+        }
+      ]
     },
     {
       "slug": "kl-and-js-divergence",
@@ -877,7 +1933,21 @@
       "syllabus_refs": [
         "1.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "divergence-measures",
+          "why": "KLとJSを含む分布間距離の全体像と使い分けを先に押さえられる"
+        },
+        {
+          "slug": "entropy-and-information",
+          "why": "KLや交差エントロピーが情報量からどう導かれるか確認できる"
+        },
+        {
+          "slug": "gan-stability",
+          "why": "GANの学習不安定性を分布間距離の選択と結び付けて理解できる"
+        }
+      ]
     },
     {
       "slug": "nearest-neighbor-search",
@@ -888,7 +1958,21 @@
       "syllabus_refs": [
         "2.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "knn",
+          "why": "近傍探索が分類や回帰の予測手続きでどう使われるか分かる"
+        },
+        {
+          "slug": "distance-metrics",
+          "why": "近さを決める距離尺度の選択が探索結果へ与える影響を理解できる"
+        },
+        {
+          "slug": "curse-of-dimensionality",
+          "why": "高次元で近傍が疎になり探索と予測が難しくなる理由を学べる"
+        }
+      ]
     },
     {
       "slug": "norms-and-correlations",
@@ -899,7 +1983,21 @@
       "syllabus_refs": [
         "2.1.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "distance-metrics",
+          "why": "ノルムがユークリッド距離やマンハッタン距離を作る関係を整理できる"
+        },
+        {
+          "slug": "knn",
+          "why": "特徴量の尺度と距離計算が近傍法の予測を左右する理由が分かる"
+        },
+        {
+          "slug": "l1-and-l2-penalty",
+          "why": "L1・L2ノルムが重みの制約や疎な解にどう働くか確認できる"
+        }
+      ]
     },
     {
       "slug": "train-validation-test",
@@ -910,7 +2008,21 @@
       "syllabus_refs": [
         "2.1.x"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "cross-validation",
+          "why": "一度の分割に依存せず検証する方法へ、データ分割の考えを発展できる"
+        },
+        {
+          "slug": "generalization-error",
+          "why": "テストデータで測りたい未知データ上の誤差との関係を理解できる"
+        },
+        {
+          "slug": "hyperparameter-tuning",
+          "why": "検証データを使ったモデル選択と最終テストの役割を実践へつなげられる"
+        }
+      ]
     },
     {
       "slug": "precision-recall-f1",
@@ -921,7 +2033,21 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "confusion-matrix",
+          "why": "適合率と再現率をTP・FP・FNの数え上げから正確に導ける"
+        },
+        {
+          "slug": "classification-metrics",
+          "why": "クラス偏りや誤りのコストに応じた指標選択へ視野を広げられる"
+        },
+        {
+          "slug": "multiclass-averaging",
+          "why": "クラス別の適合率・再現率を全体のF値へ集約する方法が分かる"
+        }
+      ]
     },
     {
       "slug": "multiclass-averaging",
@@ -932,7 +2058,21 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "precision-recall-f1",
+          "why": "クラスごとの適合率・再現率・F1を集約する前提を確認できる"
+        },
+        {
+          "slug": "classification-metrics",
+          "why": "多クラスで指標を比較するときの評価設計全体を整理できる"
+        },
+        {
+          "slug": "confusion-matrix",
+          "why": "クラス別の誤分類数から平均法の違いが生まれる理由を理解できる"
+        }
+      ]
     },
     {
       "slug": "weights-and-biases",
@@ -943,7 +2083,21 @@
       "syllabus_refs": [
         "3.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "multilayer-perceptron",
+          "why": "重みとバイアスが層の写像と表現力にどう現れるかを確認できるため"
+        },
+        {
+          "slug": "parameter-initialization",
+          "why": "重みを学習開始時にどう配置し対称性を避けるかが次に分かるため"
+        },
+        {
+          "slug": "xavier-and-he-init",
+          "why": "活性化関数に応じて重みの初期スケールを決める具体策へ進めるため"
+        }
+      ]
     },
     {
       "slug": "mse-and-mae",
@@ -954,7 +2108,21 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "regression-losses",
+          "why": "MSEとMAEを含む回帰損失を外れ値と推定対象から選べるため"
+        },
+        {
+          "slug": "regression-metrics",
+          "why": "学習に使う損失と評価時に読む指標の役割を切り分けられるため"
+        },
+        {
+          "slug": "l1-and-l2-penalty",
+          "why": "絶対値と二乗を使うペナルティの違いを損失の性質と対比できるため"
+        }
+      ]
     },
     {
       "slug": "softmax-and-onehot",
@@ -965,7 +2133,21 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "multiclass-cross-entropy",
+          "why": "softmaxの確率出力と正解ベクトルを分類損失へ接続できるため"
+        },
+        {
+          "slug": "binary-cross-entropy",
+          "why": "多クラスのsoftmaxと二値のsigmoid出力の使い分けを比較できるため"
+        },
+        {
+          "slug": "sigmoid-activation",
+          "why": "クラス数に応じた確率写像をsigmoidとsoftmaxの違いから整理できるため"
+        }
+      ]
     },
     {
       "slug": "sigmoid-activation",
@@ -976,7 +2158,21 @@
       "syllabus_refs": [
         "3.1.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "binary-cross-entropy",
+          "why": "sigmoid出力を二値分類の対数尤度として学習する流れが分かるため"
+        },
+        {
+          "slug": "activation-functions",
+          "why": "飽和や導関数の性質を他の活性化関数と共通の軸で比較できるため"
+        },
+        {
+          "slug": "gated-rnn",
+          "why": "sigmoidの0から1の出力が記憶の更新量を制御する仕組みへつながるため"
+        }
+      ]
     },
     {
       "slug": "relu-family",
@@ -987,7 +2183,21 @@
       "syllabus_refs": [
         "3.1.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "activation-functions",
+          "why": "ReLU系の勾配消失や非線形性を活性化関数全体の中で位置付けられるため"
+        },
+        {
+          "slug": "xavier-and-he-init",
+          "why": "ReLU系で信号の分散を保つHe初期化を選ぶ理由が理解できるため"
+        },
+        {
+          "slug": "tanh-activation",
+          "why": "負側の扱いと出力の0中心性をtanhと対比して選択できるため"
+        }
+      ]
     },
     {
       "slug": "tanh-activation",
@@ -998,7 +2208,21 @@
       "syllabus_refs": [
         "3.1.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "activation-functions",
+          "why": "飽和と勾配の性質をsigmoidやReLUと同じ観点で比較できるため"
+        },
+        {
+          "slug": "sigmoid-activation",
+          "why": "tanhがsigmoidを変形した関数であることから出力範囲を対照できるため"
+        },
+        {
+          "slug": "gated-rnn",
+          "why": "tanhがゲート付きRNNで候補状態を作る役割へ具体的につながるため"
+        }
+      ]
     },
     {
       "slug": "gradient-descent",
@@ -1009,7 +2233,21 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "sgd-and-minibatch",
+          "why": "全データの勾配を標本化する更新へ進みバッチサイズの影響を理解できるため"
+        },
+        {
+          "slug": "momentum-optimization",
+          "why": "現在の勾配だけでなく過去の更新を使う改善策を学べるため"
+        },
+        {
+          "slug": "pathological-curvature",
+          "why": "方向ごとに曲率が違うと学習率調整が難しくなる理由を説明できるため"
+        }
+      ]
     },
     {
       "slug": "nesterov-acceleration",
@@ -1020,7 +2258,21 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "momentum-optimization",
+          "why": "先読み勾配を使うNesterovと通常の速度蓄積の差を比較できるため"
+        },
+        {
+          "slug": "gradient-descent",
+          "why": "基本の勾配更新から加速法がどの項を変更するか追えるため"
+        },
+        {
+          "slug": "adaptive-optimizers",
+          "why": "方向を先読みする加速と座標ごとに率を変える手法を対比できるため"
+        }
+      ]
     },
     {
       "slug": "adam-family",
@@ -1031,7 +2283,21 @@
       "syllabus_refs": [
         "3.2.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "adaptive-optimizers",
+          "why": "Adamが勾配の一次・二次モーメントを使う適応法の一例と分かるため"
+        },
+        {
+          "slug": "gradient-descent",
+          "why": "基本更新式にモーメント補正と座標別学習率が加わる流れを追えるため"
+        },
+        {
+          "slug": "sgd-and-minibatch",
+          "why": "AdamとSGDをノイズ・バッチサイズ・学習率の観点で比較できるため"
+        }
+      ]
     },
     {
       "slug": "xavier-and-he-init",
@@ -1042,7 +2308,21 @@
       "syllabus_refs": [
         "3.2.iv"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "parameter-initialization",
+          "why": "初期化で活性値と勾配のスケールを保つという設計目的を先に押さえられるため"
+        },
+        {
+          "slug": "weights-and-biases",
+          "why": "初期化対象となる重みの役割と層ごとのパラメータ数を確認できるため"
+        },
+        {
+          "slug": "relu-family",
+          "why": "He初期化がReLUの負側を含む分散特性に適する理由へつながるため"
+        }
+      ]
     },
     {
       "slug": "l1-and-l2-penalty",
@@ -1053,7 +2333,21 @@
       "syllabus_refs": [
         "3.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "norm-penalty",
+          "why": "L1とL2をノルムで損失へ加える正則化の全体像を確認できるため"
+        },
+        {
+          "slug": "early-stopping",
+          "why": "明示的なペナルティと学習を途中で止める正則化を対比できるため"
+        },
+        {
+          "slug": "dropout",
+          "why": "重みを縮める方法とユニットを無効化する方法の違いを理解できるため"
+        }
+      ]
     },
     {
       "slug": "early-stopping",
@@ -1064,7 +2358,21 @@
       "syllabus_refs": [
         "3.3.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "overfit-underfit",
+          "why": "検証誤差の悪化を過学習の兆候として判断する基準を押さえられるため"
+        },
+        {
+          "slug": "train-validation-test",
+          "why": "早期終了で検証データを使い最終評価をテストに残す設計が分かるため"
+        },
+        {
+          "slug": "implicit-regularization",
+          "why": "停止時点が解を絞る陰的正則化として働く見方へ発展できるため"
+        }
+      ]
     },
     {
       "slug": "receptive-field",
@@ -1075,7 +2383,21 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "convolution-operation",
+          "why": "受容野を広げる局所重み共有の基本演算を先に理解できるため"
+        },
+        {
+          "slug": "feature-map-and-padding",
+          "why": "カーネルとstrideが出力サイズと影響範囲をどう変えるか計算できるため"
+        },
+        {
+          "slug": "specialized-convolutions",
+          "why": "dilationなどで受容野や解像度を調整する発展手法へ進めるため"
+        }
+      ]
     },
     {
       "slug": "feature-map-and-padding",
@@ -1086,7 +2408,21 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "convolution-operation",
+          "why": "特徴マップを生むカーネルの局所演算と重み共有を確認できるため"
+        },
+        {
+          "slug": "receptive-field",
+          "why": "出力サイズだけでなく各特徴が見る入力範囲まで追跡できるため"
+        },
+        {
+          "slug": "pooling",
+          "why": "strideや空間縮小を畳み込み以外の集約層と比較できるため"
+        }
+      ]
     },
     {
       "slug": "depthwise-and-pointwise",
@@ -1097,7 +2433,21 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "convolution-operation",
+          "why": "通常の畳み込みをチャネル分解する前に、基本の局所処理と共有重みを確認できる"
+        },
+        {
+          "slug": "specialized-convolutions",
+          "why": "深さ方向・点ごとの分解が特殊な畳み込みの設計群でどう位置付くか比較できる"
+        },
+        {
+          "slug": "feature-map-and-padding",
+          "why": "分解後も変わらない出力形状を計算し、空間サイズとチャネル数の違いを整理できる"
+        }
+      ]
     },
     {
       "slug": "lstm",
@@ -1108,7 +2458,21 @@
       "syllabus_refs": [
         "3.5.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "recurrent-neural-network",
+          "why": "LSTMが解決しようとする隠れ状態の更新と、系列処理の基本構造を先に理解できる"
+        },
+        {
+          "slug": "bptt",
+          "why": "時間方向へ逆伝播する際に、LSTMのセル状態が勾配を運ぶ仕組みを追える"
+        },
+        {
+          "slug": "gru",
+          "why": "セル状態を分けて持つLSTMと、隠れ状態だけを更新するGRUを対比できる"
+        }
+      ]
     },
     {
       "slug": "gru",
@@ -1119,7 +2483,21 @@
       "syllabus_refs": [
         "3.5.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "recurrent-neural-network",
+          "why": "GRUのゲートが追加される土台となる、RNNの状態更新と時間共有を確認できる"
+        },
+        {
+          "slug": "bptt",
+          "why": "ゲートが長期依存の勾配をどう保つか、時間展開した逆伝播から理解できる"
+        },
+        {
+          "slug": "lstm",
+          "why": "更新・リセットの2ゲートとセル状態・出力ゲートの違いを並べて選択できる"
+        }
+      ]
     },
     {
       "slug": "self-attention",
@@ -1130,7 +2508,21 @@
       "syllabus_refs": [
         "3.6.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "seq2seq-and-attention",
+          "why": "系列変換で固定長ボトルネックを注意機構がどう緩和したか、導入理由を確認できる"
+        },
+        {
+          "slug": "transformer",
+          "why": "Self-Attentionから再帰を除いた系列モデルへ発展する構成を理解できる"
+        },
+        {
+          "slug": "bert",
+          "why": "双方向エンコーダで注意機構が文脈表現に使われる実例へつなげられる"
+        }
+      ]
     },
     {
       "slug": "normalization-variants",
@@ -1141,7 +2533,17 @@
       "syllabus_refs": [
         "3.7.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "normalization-layers",
+          "why": "バッチ正規化と層正規化の軸の違いを基準に、他の正規化手法を比較できる"
+        },
+        {
+          "slug": "sgd-and-minibatch",
+          "why": "バッチサイズが統計量と勾配ノイズに与える影響を、正規化の選択と結び付けられる"
+        }
+      ]
     },
     {
       "slug": "residual-block",
@@ -1152,7 +2554,21 @@
       "syllabus_refs": [
         "4.1.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "resnet",
+          "why": "残差ブロックを深い画像認識へ積み重ね、劣化問題を解く流れを確認する"
+        },
+        {
+          "slug": "convolution-operation",
+          "why": "主経路で特徴を変換する畳み込みと、入力を足し戻す経路の役割を分解できる"
+        },
+        {
+          "slug": "normalization-layers",
+          "why": "残差ブロック内の活性値スケールを整える正規化の配置と効果を比較できる"
+        }
+      ]
     },
     {
       "slug": "object-detection-basics",
@@ -1163,7 +2579,21 @@
       "syllabus_refs": [
         "4.2.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "nms-and-anchor-box",
+          "why": "候補枠を作り重複を抑えるアンカーとNMSが、検出処理のどこに入るか分かる"
+        },
+        {
+          "slug": "iou-and-map",
+          "why": "矩形の正解判定からAP・mAPまで、検出結果を評価する基準を具体化できる"
+        },
+        {
+          "slug": "yolo-and-ssd",
+          "why": "候補領域を別工程にしない一段階検出が、基本構成とどう異なるか比較できる"
+        }
+      ]
     },
     {
       "slug": "nms-and-anchor-box",
@@ -1174,7 +2604,21 @@
       "syllabus_refs": [
         "4.2.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "object-detection-basics",
+          "why": "アンカーとNMSが分類・矩形回帰を含む検出パイプラインで担う役割を確認できる"
+        },
+        {
+          "slug": "yolo-and-ssd",
+          "why": "アンカーを使う代表的な一段階検出器で、予測枠とNMSの実装を具体的に読める"
+        },
+        {
+          "slug": "fcos",
+          "why": "アンカーを用いず物体の4辺を回帰するFCOSと対比し、設計上の違いを理解できる"
+        }
+      ]
     },
     {
       "slug": "panoptic-segmentation",
@@ -1185,7 +2629,17 @@
       "syllabus_refs": [
         "4.3.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "semantic-segmentation",
+          "why": "全画素にクラスを付ける意味分割を土台に、インスタンス識別を加える理由が分かる"
+        },
+        {
+          "slug": "object-detection-basics",
+          "why": "物体の位置と個体を扱う検出が、パノプティック統合へ接続する流れを見られる"
+        }
+      ]
     },
     {
       "slug": "word2vec",
@@ -1196,7 +2650,21 @@
       "syllabus_refs": [
         "4.4.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "word-embedding",
+          "why": "単語をベクトルへ写す目的と共起利用を先に押さえ、Word2vecの学習を読める"
+        },
+        {
+          "slug": "bert-pretraining",
+          "why": "語順を捨てる静的埋め込みと、文脈依存表現を学ぶ事前学習を対比できる"
+        },
+        {
+          "slug": "autoregressive-generation",
+          "why": "文脈から次の語を予測する学習と、生成時に逐次予測する枠組みの違いを整理できる"
+        }
+      ]
     },
     {
       "slug": "bert-pretraining",
@@ -1207,7 +2675,21 @@
       "syllabus_refs": [
         "4.4.ii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "bert",
+          "why": "MLMとNSPで得た重みが、下流タスク向けBERTへ使われる流れを確認できる"
+        },
+        {
+          "slug": "self-attention",
+          "why": "マスク語を左右の文脈から推定するBERTの双方向性を、注意計算から理解できる"
+        },
+        {
+          "slug": "word2vec",
+          "why": "局所文脈の静的ベクトルから、文脈ごとに変わる表現へ進んだ差分を比較できる"
+        }
+      ]
     },
     {
       "slug": "autoregressive-generation",
@@ -1218,7 +2700,21 @@
       "syllabus_refs": [
         "4.6.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "gpt-and-rag",
+          "why": "次トークンを生成するGPTと、外部検索を組み合わせるRAGをつなげて読める"
+        },
+        {
+          "slug": "perplexity",
+          "why": "条件付き確率の積から得られる負の対数尤度を、生成品質の指標として解釈できる"
+        },
+        {
+          "slug": "diffusion-model",
+          "why": "逐次的な次要素予測と、ノイズ除去を反復する生成方式の違いを対比できる"
+        }
+      ]
     },
     {
       "slug": "diffusion-model",
@@ -1229,7 +2725,21 @@
       "syllabus_refs": [
         "4.6.i"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "generative-discriminative-models",
+          "why": "拡散モデルがデータ分布を生成する側のモデルであることを、識別モデルと区別できる"
+        },
+        {
+          "slug": "gan",
+          "why": "ノイズから生成するGANと、逆拡散で生成する拡散モデルの学習原理を比較できる"
+        },
+        {
+          "slug": "autoregressive-generation",
+          "why": "一要素ずつ条件付ける生成と、全体へ加えたノイズを段階的に戻す生成を対比できる"
+        }
+      ]
     },
     {
       "slug": "gan-stability",
@@ -1240,7 +2750,21 @@
       "syllabus_refs": [
         "4.6.iii"
       ],
-      "status": "done"
+      "status": "done",
+      "related": [
+        {
+          "slug": "gan",
+          "why": "生成器と識別器のminimax構造を先に確認し、崩壊や勾配消失の原因を追える"
+        },
+        {
+          "slug": "kl-and-js-divergence",
+          "why": "GANの分布比較に現れるJSやKLの向きが、学習の挙動へ与える意味を理解できる"
+        },
+        {
+          "slug": "norm-penalty",
+          "why": "勾配ペナルティやスペクトル制約と、重みへ直接かける正則化の違いを整理できる"
+        }
+      ]
     }
   ],
   "optional_sections": [
