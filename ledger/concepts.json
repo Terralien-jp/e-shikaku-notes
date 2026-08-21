@@ -19,7 +19,7 @@
       "syllabus_refs": [
         "1.2.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "entropy-and-information",
@@ -30,7 +30,7 @@
       "syllabus_refs": [
         "1.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "divergence-measures",
@@ -74,7 +74,7 @@
       "syllabus_refs": [
         "2.1.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "generalization-error",
@@ -85,7 +85,7 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "bias-variance",
@@ -96,7 +96,7 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "overfit-underfit",
@@ -107,7 +107,7 @@
       "syllabus_refs": [
         "2.1.ix"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "curse-of-dimensionality",
@@ -217,7 +217,7 @@
       "syllabus_refs": [
         "3.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "regression-losses",
@@ -272,7 +272,7 @@
       "syllabus_refs": [
         "3.1.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "sgd-and-minibatch",
