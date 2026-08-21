@@ -1,7 +1,20 @@
 {
   "slug": "parameter-estimation",
   "sources": [
-    {"title": "Deep Learning: Probability and Information Theory", "url": "https://www.deeplearningbook.org/contents/prob.html", "why": "確率モデル、確率分布、期待値を用いたパラメータ推定の基礎"},
-    {"title": "Deep Learning: Numerical Computation", "url": "https://www.deeplearningbook.org/contents/numerical.html", "why": "最適化問題としての推定と勾配に基づくパラメータ更新"}
+    {
+      "title": "Deep Learning: Probability and Information Theory",
+      "url": "https://www.deeplearningbook.org/contents/prob.html",
+      "why": "確率モデル、確率分布、期待値を用いたパラメータ推定の基礎"
+    },
+    {
+      "title": "Deep Learning: Numerical Computation",
+      "url": "https://www.deeplearningbook.org/contents/numerical.html",
+      "why": "最適化問題としての推定と勾配に基づくパラメータ更新"
+    },
+    {
+      "title": "Deep Learning: Machine Learning Basics",
+      "url": "https://www.deeplearningbook.org/contents/ml.html",
+      "why": "最尤推定・MAP推定の定義と、KLダイバージェンス最小化との等価性（5.5〜5.6節）"
+    }
   ]
 }
