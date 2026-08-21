@@ -1031,7 +1031,7 @@
       "syllabus_refs": [
         "3.2.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "xavier-and-he-init",
@@ -1042,7 +1042,7 @@
       "syllabus_refs": [
         "3.2.iv"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "l1-and-l2-penalty",
@@ -1086,7 +1086,7 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "depthwise-and-pointwise",
@@ -1097,7 +1097,7 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "lstm",
@@ -1119,7 +1119,7 @@
       "syllabus_refs": [
         "3.5.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "self-attention",
@@ -1174,7 +1174,7 @@
       "syllabus_refs": [
         "4.2.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "panoptic-segmentation",
@@ -1185,7 +1185,7 @@
       "syllabus_refs": [
         "4.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "word2vec",
@@ -1196,7 +1196,7 @@
       "syllabus_refs": [
         "4.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "bert-pretraining",
@@ -1240,7 +1240,7 @@
       "syllabus_refs": [
         "4.6.iii"
       ],
-      "status": "todo"
+      "status": "done"
     }
   ],
   "optional_sections": [
