@@ -569,7 +569,7 @@
       "syllabus_refs": [
         "4.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "yolo-and-ssd",
@@ -580,7 +580,7 @@
       "syllabus_refs": [
         "4.2.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "fcos",
@@ -602,7 +602,7 @@
       "syllabus_refs": [
         "4.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "word-embedding",
@@ -679,7 +679,7 @@
       "syllabus_refs": [
         "4.6.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "conditional-gan",
@@ -1163,7 +1163,7 @@
       "syllabus_refs": [
         "4.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "nms-and-anchor-box",
