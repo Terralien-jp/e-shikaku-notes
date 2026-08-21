@@ -76,6 +76,43 @@ def check_arxiv_titles(cards) -> list[str]:
     return out
 
 
+def check_doi_titles(cards) -> list[str]:
+    """Crossref に DOI を引いて、カードの title がその DOI の論文かを確かめる。
+
+    DOI は解決先が出版社サイトなので、生死チェック（HTTP 200）では「別の論文の DOI」を
+    一切捕まえられない。実際に 10.1007/BF02591564 を Lin 1991 として登録したカードがあり、
+    その DOI は 1980 年の応用地質学の総括記事のものだった（2026-08-22）。
+    """
+    out: list[str] = []
+    targets: dict[str, list[tuple[str, str]]] = {}
+    for p in cards:
+        for s in json.loads(p.read_text(encoding="utf-8")).get("sources", []):
+            m = re.search(r"doi\.org/(10\.[^\s\"']+)", str(s.get("url", "")))
+            if m:
+                targets.setdefault(m.group(1).rstrip("/"), []).append((p.stem, str(s.get("title", ""))))
+    for doi, uses in sorted(targets.items()):
+        req = urllib.request.Request(
+            "https://api.crossref.org/works/" + urllib.parse.quote(doi, safe=""),
+            headers={"User-Agent": "e-shikaku-notes (mailto:terralienjp@gmail.com)"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                msg = json.loads(r.read().decode("utf-8", "replace"))["message"]
+        except Exception as e:
+            out.append(f"SOURCES_TITLE_UNCHECKED: DOI {doi} を Crossref で引けません（{e}）")
+            continue
+        titles = msg.get("title") or []
+        if not titles:
+            out.append(f"SOURCES_TITLE_UNCHECKED: DOI {doi} に title がありません")
+            continue
+        real = html.unescape(re.sub(r"\s+", " ", titles[0]).strip())
+        for stem, claimed in uses:
+            if not (_norm(claimed)[:35] in _norm(real) or _norm(real)[:35] in _norm(claimed)):
+                out.append(f"SOURCES_TITLE_MISMATCH: {stem}: {doi} は「{real}」であって"
+                           f"「{claimed}」ではありません")
+        time.sleep(1)
+    return out
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="出典カードの機械検証")
     ap.add_argument("--check-links", action="store_true")
@@ -136,6 +173,7 @@ def main(argv=None) -> int:
 
     if args.check_titles:
         errors += check_arxiv_titles(cards)
+        errors += check_doi_titles(cards)
 
     todo = sorted(known - {p.stem for p in cards})
     for f in errors:
