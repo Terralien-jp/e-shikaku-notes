@@ -1,0 +1,15 @@
+{
+  "slug": "conditional-and-marginal-probability",
+  "sources": [
+    {
+      "title": "Deep Learning: Probability and Information Theory",
+      "url": "https://www.deeplearningbook.org/contents/prob.html",
+      "why": "同時分布・周辺化・条件付き確率・連鎖律・独立と条件付き独立の定義（3.4〜3.8節）"
+    },
+    {
+      "title": "Deep Learning: Machine Learning Basics",
+      "url": "https://www.deeplearningbook.org/contents/ml.html",
+      "why": "条件付き分布 p(y|x) をモデル化することとしての教師あり学習の定式化"
+    }
+  ]
+}
