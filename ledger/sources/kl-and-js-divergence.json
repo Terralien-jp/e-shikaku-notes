@@ -1,7 +1,7 @@
 {
   "slug": "kl-and-js-divergence",
   "sources": [
-    {"title": "Divergence measures based on the Shannon entropy", "url": "https://doi.org/10.1007/BF02591564", "why": "KLダイバージェンスとJSダイバージェンスの定義・性質の根拠"},
-    {"title": "Divergence measures based on the Shannon entropy", "url": "https://doi.org/10.1007/BF02591564", "why": "JSダイバージェンスを含むエントロピー由来の発散尺度の定義"}
+    {"title": "Divergence measures based on the Shannon entropy", "url": "https://doi.org/10.1109/18.61115", "why": "JSダイバージェンスの定義と、対称性・有界性などの性質の出典（Lin 1991）"},
+    {"title": "Deep Learning: Probability and Information Theory", "url": "https://www.deeplearningbook.org/contents/prob.html", "why": "KLダイバージェンスの定義・非対称性・交差エントロピーとの関係"}
   ]
 }

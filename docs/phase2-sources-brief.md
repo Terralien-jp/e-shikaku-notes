@@ -88,3 +88,9 @@ python3 scripts/validate_sources.py --check-links
 | 原論文が arXiv に無い（学会のみ・有料） | `doi.org` / `dl.acm.org` / `aclanthology.org` を試す。無ければ公式ドキュメントで代用し、報告に書く |
 | 概念が複数の論文にまたがる | 2〜4件に収める。**入れすぎない**。執筆者が読む量が増えるだけです |
 | 許可リスト外にしか出典が無い | **載せない。** 報告の2に書いて人間の判断を待つ |
+
+★**DOI も「別の論文を指す」ことがある（2026-08-22 追記・実害2件）。** DOI は出版社サイトへ解決するので、
+URL の生死チェックでは誤 ID を1件も捕まえられません。実際に `10.1007/BF02591564` を Lin 1991
+「Divergence measures based on the Shannon entropy」として、`10.1038/nature04569` を Hinton & Salakhutdinov 2006
+として登録したカードがありました。前者は1980年の応用地質学の総括記事、後者はヒト12番染色体の塩基配列です。
+`validate_sources.py --check-titles` が Crossref にタイトルを引いて照合します。**カードを作った直後に必ず回すこと。**

@@ -767,7 +767,7 @@
       "syllabus_refs": [
         "4.9.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "model-interpretation",
@@ -778,7 +778,7 @@
       "syllabus_refs": [
         "4.9.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "edge-model-compression",
@@ -811,7 +811,7 @@
       "syllabus_refs": [
         "5.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "accelerator-architectures",
@@ -822,7 +822,7 @@
       "syllabus_refs": [
         "5.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "container-virtualization",
@@ -833,7 +833,7 @@
       "syllabus_refs": [
         "5.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "conditional-and-marginal-probability",
@@ -866,7 +866,7 @@
       "syllabus_refs": [
         "1.2.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "kl-and-js-divergence",
@@ -877,7 +877,7 @@
       "syllabus_refs": [
         "1.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "nearest-neighbor-search",
@@ -888,7 +888,7 @@
       "syllabus_refs": [
         "2.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "norms-and-correlations",
