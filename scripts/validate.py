@@ -182,6 +182,54 @@ def check_visual_gap(stem: str, body: str) -> list[Finding]:
     return out
 
 
+# 表の列数が揃っていない形は、機械検証を通ったまま崩れて表示される。
+# 実害（2026-08-22）: 見出し3列に対し区切り行が `|---|---:|---|---|` の4列という
+# ノートが ERROR 0 で通り、人間が読んで初めて見つかった。
+TABLE_SEP = re.compile(r"^\s*\|(?:\s*:?-{1,}:?\s*\|)+\s*$")
+# セル区切りに見えるが区切りではないもの: 数式の中の \| （ノルム記法）と、
+# エスケープされた \|。数えるより先に伏せる。
+INLINE_MATH = re.compile(r"\$[^$\n]+\$")
+
+
+def _cells(row: str) -> int:
+    """行頭・行末のパイプを落として列数を数える。数式とエスケープは伏せてから数える。"""
+    s = INLINE_MATH.sub(lambda m: "x" * len(m.group(0)), row.strip())
+    s = s.replace(r"\|", "x")
+    s = s[1:] if s.startswith("|") else s
+    s = s[:-1] if s.endswith("|") else s
+    return len(s.split("|"))
+
+
+def check_tables(stem: str, body: str) -> list[Finding]:
+    """表の見出し・区切り・本体で列数が揃っているか。"""
+    out: list[Finding] = []
+    lines = body.splitlines()
+    fenced = False
+    for i, line in enumerate(lines):
+        if line.lstrip().startswith("```"):
+            fenced = not fenced
+            continue
+        if fenced or not TABLE_SEP.match(line) or i == 0:
+            continue
+        head = lines[i - 1]
+        if not head.strip().startswith("|"):
+            continue
+        n = _cells(head)
+        if _cells(line) != n:
+            out.append(Finding("ERROR", "TABLE_COLUMNS",
+                               f"{stem}: 表の区切り行が {_cells(line)} 列、見出しが {n} 列で揃っていません",
+                               i + 1))
+        for j in range(i + 1, len(lines)):
+            row = lines[j]
+            if not row.strip().startswith("|"):
+                break
+            if _cells(row) != n:
+                out.append(Finding("ERROR", "TABLE_COLUMNS",
+                                   f"{stem}: 表の行が {_cells(row)} 列、見出しが {n} 列で揃っていません",
+                                   j + 1))
+    return out
+
+
 # raw HTML ブロック（囲み・想起チェック）の中は、開きタグの直後に空行が無いと
 # CommonMark が中身をまるごと生の HTML として扱う＝Markdown も数式も解釈されない。
 # 実害（2026-08-18）: caution / details に書いた $...$ が、KaTeX を通らず
@@ -343,6 +391,7 @@ def validate(paths: list[Path], *, check_links_: bool, check_code_: bool) -> lis
         findings += check_sources(stem, fm)
         findings += check_h2(stem, body)
         findings += check_visual_gap(stem, body)
+        findings += check_tables(stem, body)
         findings += check_raw_html_blocks(stem, body)
         findings += check_internal_links(stem, body, existing)
         findings += check_math(stem, body)
