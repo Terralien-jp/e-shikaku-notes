@@ -338,7 +338,7 @@
       "syllabus_refs": [
         "3.2.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "parameter-initialization",
@@ -360,7 +360,7 @@
       "syllabus_refs": [
         "3.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "dropout",
@@ -371,7 +371,7 @@
       "syllabus_refs": [
         "3.3.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "implicit-regularization",
@@ -415,7 +415,7 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "recurrent-neural-network",
@@ -987,7 +987,7 @@
       "syllabus_refs": [
         "3.1.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "tanh-activation",
@@ -1053,7 +1053,7 @@
       "syllabus_refs": [
         "3.3.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "early-stopping",
@@ -1064,7 +1064,7 @@
       "syllabus_refs": [
         "3.3.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "receptive-field",
@@ -1075,7 +1075,7 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "feature-map-and-padding",
