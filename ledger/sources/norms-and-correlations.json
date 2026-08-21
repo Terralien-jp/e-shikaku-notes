@@ -1,0 +1,7 @@
+{
+  "slug": "norms-and-correlations",
+  "sources": [
+    {"title": "numpy.linalg.norm", "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html", "why": "ベクトル・行列ノルムの次数指定と計算仕様"},
+    {"title": "numpy.corrcoef", "url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html", "why": "相関係数行列の定義とNumPyでの計算仕様"}
+  ]
+}

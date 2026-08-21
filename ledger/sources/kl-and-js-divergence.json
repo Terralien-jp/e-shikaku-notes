@@ -1,0 +1,7 @@
+{
+  "slug": "kl-and-js-divergence",
+  "sources": [
+    {"title": "Divergence measures based on the Shannon entropy", "url": "https://doi.org/10.1007/BF02591564", "why": "KLダイバージェンスとJSダイバージェンスの定義・性質の根拠"},
+    {"title": "Divergence measures based on the Shannon entropy", "url": "https://doi.org/10.1007/BF02591564", "why": "JSダイバージェンスを含むエントロピー由来の発散尺度の定義"}
+  ]
+}

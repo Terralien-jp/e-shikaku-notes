@@ -1,0 +1,7 @@
+{
+  "slug": "regression-metrics",
+  "sources": [
+    {"title": "3.4. Metrics and scoring: quantifying the quality of predictions", "url": "https://scikit-learn.org/stable/modules/model_evaluation.html", "why": "回帰評価におけるMSE・MAE・R2などの選択と符号規約"},
+    {"title": "mean_squared_error", "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html", "why": "平均二乗誤差の定義とmultioutput・平方根の扱い"}
+  ]
+}

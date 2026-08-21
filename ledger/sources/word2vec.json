@@ -1,0 +1,7 @@
+{
+  "slug": "word2vec",
+  "sources": [
+    {"title": "Efficient Estimation of Word Representations in Vector Space", "url": "https://arxiv.org/abs/1301.3781", "why": "CBOWとSkip-gramによる単語ベクトル学習の目的関数と高速化"},
+    {"title": "Distributed Representations of Words and Phrases and their Compositionality", "url": "https://arxiv.org/abs/1310.4546", "why": "サブサンプリングとnegative samplingを含むWord2vec拡張"}
+  ]
+}

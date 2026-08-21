@@ -1,0 +1,8 @@
+{
+  "slug": "parallelization-strategies",
+  "sources": [
+    {"title": "GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism", "url": "https://arxiv.org/abs/1811.06965", "why": "パイプライン並列の分割、マイクロバッチ、再計算の根拠"},
+    {"title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism", "url": "https://arxiv.org/abs/1909.08053", "why": "Transformerを層内分割するテンソル並列の設計と通信"},
+    {"title": "Distributed communication package - torch.distributed", "url": "https://docs.pytorch.org/docs/stable/distributed.html", "why": "分散学習のプロセス・通信バックエンド・集団通信API"}
+  ]
+}

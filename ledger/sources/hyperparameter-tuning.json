@@ -1,0 +1,7 @@
+{
+  "slug": "hyperparameter-tuning",
+  "sources": [
+    {"title": "Making a Science of Model Search", "url": "https://arxiv.org/abs/1209.5111", "why": "ハイパーパラメータ探索をモデル選択問題として設計する根拠"},
+    {"title": "Tuning the hyper-parameters of an estimator", "url": "https://scikit-learn.org/stable/modules/grid_search.html", "why": "グリッド探索・ランダム探索と交差検証を組み合わせる実装"}
+  ]
+}

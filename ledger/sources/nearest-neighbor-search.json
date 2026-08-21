@@ -1,0 +1,1 @@
+{"slug":"nearest-neighbor-search","sources":[{"title":"NearestNeighbors","url":"https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.NearestNeighbors.html","why":"最近傍探索の対象、距離、探索アルゴリズムを指定する公式仕様"},{"title":"KDTree","url":"https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html","why":"KD-treeによる最近傍探索と空間分割の公式API仕様"}]}

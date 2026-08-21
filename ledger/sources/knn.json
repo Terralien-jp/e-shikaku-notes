@@ -1,0 +1,1 @@
+{"slug":"knn","sources":[{"title":"KNeighborsClassifier","url":"https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html","why":"k近傍分類の投票、距離尺度、近傍数を指定する公式仕様"},{"title":"Nearest Neighbors","url":"https://scikit-learn.org/stable/modules/neighbors.html","why":"近傍法の探索、分類、回帰と距離計算の公式ガイド"}]}

@@ -1,0 +1,7 @@
+{
+  "slug": "mse-and-mae",
+  "sources": [
+    {"title": "MSELoss", "url": "https://docs.pytorch.org/docs/2.13/generated/torch.nn.MSELoss.html", "why": "平均二乗誤差の定義、reduction、勾配の実装仕様"},
+    {"title": "L1Loss", "url": "https://docs.pytorch.org/docs/2.13/generated/torch.nn.L1Loss.html", "why": "平均絶対誤差の定義とreductionの実装仕様"}
+  ]
+}

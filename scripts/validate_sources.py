@@ -12,12 +12,22 @@
 
   python3 scripts/validate_sources.py                # 全カード
   python3 scripts/validate_sources.py --check-links   # URLの生死も見る
+  python3 scripts/validate_sources.py --check-titles  # arXiv ID とタイトルの対応を照合
+
+★--check-titles が要る理由（2026-08-22）。URL が生きていることは「その論文である」ことの
+  証拠にならない。arXiv ID を取り違えたカードが3件見つかっており、いずれも 200 を返すため
+  --check-links では捕まらなかった（別の論文を指したまま執筆に渡ると、記事の主張の帰属が壊れる）。
+  arXiv API はレート制限が厳しいので CI には入れず、カードを作った直後に手で回す。
 """
 from __future__ import annotations
 
 import argparse
+import html
 import json
+import re
 import sys
+import time
+import urllib.request
 import urllib.parse
 from pathlib import Path
 
@@ -31,9 +41,46 @@ from validate import SOURCE_ALLOWLIST, http_status  # noqa: E402
 MAX_WHY = 120
 
 
+def _norm(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def check_arxiv_titles(cards) -> list[str]:
+    """arXiv の abs ページを引いて、カードの title がその ID の論文かを確かめる。"""
+    out: list[str] = []
+    targets: dict[str, list[tuple[str, str]]] = {}
+    for p in cards:
+        for s in json.loads(p.read_text(encoding="utf-8")).get("sources", []):
+            m = re.search(r"arxiv\.org/abs/([\d.]+)", str(s.get("url", "")))
+            if m:
+                targets.setdefault(m.group(1), []).append((p.stem, str(s.get("title", ""))))
+    for n, (aid, uses) in enumerate(sorted(targets.items()), 1):
+        req = urllib.request.Request(f"https://arxiv.org/abs/{aid}",
+                                     headers={"User-Agent": "Mozilla/5.0 e-shikaku-notes"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                page = r.read().decode("utf-8", "replace")
+        except Exception as e:
+            out.append(f"SOURCES_TITLE_UNCHECKED: arXiv {aid} を取得できません（{e}）")
+            continue
+        m = re.search(r"<title>\[[\d.v]+\]\s*(.*?)</title>", page, re.S)
+        if not m:
+            out.append(f"SOURCES_TITLE_UNCHECKED: arXiv {aid} のタイトルを読めません")
+            continue
+        real = html.unescape(re.sub(r"\s+", " ", m.group(1)).strip())
+        for stem, claimed in uses:
+            if not (_norm(claimed)[:35] in _norm(real) or _norm(real)[:35] in _norm(claimed)):
+                out.append(f"SOURCES_TITLE_MISMATCH: {stem}: {aid} は「{real}」であって"
+                           f"「{claimed}」ではありません")
+        time.sleep(1)
+    return out
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="出典カードの機械検証")
     ap.add_argument("--check-links", action="store_true")
+    ap.add_argument("--check-titles", action="store_true",
+                    help="arXiv 出典の ID と title の対応を照合する（ネットワーク使用・低速）")
     ap.add_argument("--warn-only", action="store_true", help="★CI では絶対に付けない")
     args = ap.parse_args(argv)
 
@@ -86,6 +133,9 @@ def main(argv=None) -> int:
                     errors.append(f"SOURCES_DEAD: {stem}#{i}: 出典が {code}: {s.get('url')}")
                 elif code == 0 or code >= 400:
                     warns.append(f"SOURCES_UNCHECKED: {stem}#{i}: 確認できません({code}): {s.get('url')}")
+
+    if args.check_titles:
+        errors += check_arxiv_titles(cards)
 
     todo = sorted(known - {p.stem for p in cards})
     for f in errors:

@@ -1,0 +1,7 @@
+{
+  "slug": "dataset-splits",
+  "sources": [
+    {"title": "train_test_split", "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html", "why": "データを訓練・テストへ分割する仕様と乱数・層化の扱い"},
+    {"title": "3.1. Cross-validation: evaluating estimator performance", "url": "https://scikit-learn.org/stable/modules/cross_validation.html", "why": "訓練・検証・テストの役割と交差検証による評価設計"}
+  ]
+}

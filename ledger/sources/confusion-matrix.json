@@ -1,0 +1,7 @@
+{
+  "slug": "confusion-matrix",
+  "sources": [
+    {"title": "confusion_matrix", "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html", "why": "真陽性・偽陽性・真陰性・偽陰性を行列に集計する定義と仕様"},
+    {"title": "3.4. Metrics and scoring: quantifying the quality of predictions", "url": "https://scikit-learn.org/stable/modules/model_evaluation.html", "why": "混同行列から分類指標を導く評価体系と正規化オプション"}
+  ]
+}

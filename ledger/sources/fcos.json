@@ -1,0 +1,1 @@
+{"slug":"fcos","sources":[{"title":"FCOS: Fully Convolutional One-Stage Object Detection","url":"https://arxiv.org/abs/1904.01355","why":"アンカーボックスを使わないFCOSの画素単位物体検出と訓練目的"},{"title":"FCOS: A simple and strong anchor-free object detector","url":"https://arxiv.org/abs/2006.09214","why":"FCOSの改良設計、センターネス分岐、アンカーフリー検出の実証"}]}

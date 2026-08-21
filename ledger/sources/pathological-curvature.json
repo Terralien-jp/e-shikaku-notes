@@ -1,0 +1,7 @@
+{
+  "slug": "pathological-curvature",
+  "sources": [
+    {"title": "On the difficulty of training Recurrent Neural Networks", "url": "https://arxiv.org/abs/1211.5063", "why": "長期依存で勾配が不安定になる原因としての曲率と勾配爆発・消失"},
+    {"title": "Visualizing the Loss Landscape of Neural Nets", "url": "https://arxiv.org/abs/1712.09913", "why": "ニューラルネットの損失曲面を可視化し、曲率と最適化難度を調べる手法"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "curse-of-dimensionality",
+  "sources": [
+    {
+      "title": "Deep Learning: Machine Learning Basics",
+      "url": "https://www.deeplearningbook.org/contents/ml.html",
+      "why": "次元が上がると構成の数が指数的に増え、各構成に入るサンプルが枯れること（5.11.1節）"
+    },
+    {
+      "title": "Deep Learning: Representation Learning",
+      "url": "https://www.deeplearningbook.org/contents/representation.html",
+      "why": "分散表現が指数的な領域分割を可能にし、次元の呪いを緩める側の議論"
+    }
+  ]
+}

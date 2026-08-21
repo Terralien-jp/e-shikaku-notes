@@ -1,0 +1,7 @@
+{
+  "slug": "conditional-gan",
+  "sources": [
+    {"title": "Conditional Generative Adversarial Nets", "url": "https://arxiv.org/abs/1411.1784", "why": "条件変数を生成器・識別器へ与える条件付きGANの定式化"},
+    {"title": "Generative Adversarial Networks", "url": "https://arxiv.org/abs/1406.2661", "why": "条件付きGANが拡張する敵対的学習の基本目的関数"}
+  ]
+}

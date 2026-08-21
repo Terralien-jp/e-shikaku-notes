@@ -1,0 +1,1 @@
+{"slug":"gru","sources":[{"title":"Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation","url":"https://arxiv.org/abs/1406.1078","why":"GRUの更新ゲート、リセットゲート、隠れ状態の更新式"},{"title":"Deep Learning: Sequence Modeling","url":"https://www.deeplearningbook.org/contents/rnn.html","why":"ゲート付きRNNによる長期依存の扱いと系列モデルの位置付け"}]}

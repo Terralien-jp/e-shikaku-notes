@@ -1,0 +1,1 @@
+{"slug":"receptive-field","sources":[{"title":"Deep Learning: Convolutional Networks","url":"https://www.deeplearningbook.org/contents/convnets.html","why":"局所結合と層の積み重ねで入力上の受容野が広がる仕組み"},{"title":"torch.nn.Conv2d","url":"https://docs.pytorch.org/docs/2.13/generated/torch.nn.Conv2d.html","why":"kernel、stride、dilationが畳み込み出力の空間範囲へ与える仕様"}]}

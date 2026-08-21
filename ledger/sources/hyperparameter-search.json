@@ -1,0 +1,7 @@
+{
+  "slug": "hyperparameter-search",
+  "sources": [
+    {"title": "Random Search for Hyper-Parameter Optimization", "url": "https://www.jmlr.org/papers/v13/bergstra12a.html", "why": "グリッド探索よりrandom searchが有効になり得る理由と実験根拠"},
+    {"title": "Optuna: A Next-generation Hyperparameter Optimization Framework", "url": "https://arxiv.org/abs/1907.10902", "why": "逐次的なハイパーパラメータ最適化と枝刈りの実装設計"}
+  ]
+}

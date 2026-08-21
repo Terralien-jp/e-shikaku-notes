@@ -1,0 +1,7 @@
+{
+  "slug": "early-stopping",
+  "sources": [
+    {"title": "Regularization for Deep Learning", "url": "https://www.deeplearningbook.org/contents/regularization.html", "why": "早期終了を汎化誤差を抑える正則化として位置付ける根拠"},
+    {"title": "Gradient Boosting", "url": "https://scikit-learn.org/stable/modules/ensemble.html#gradient-boosting", "why": "検証スコアを監視して学習を止める実装上の条件"}
+  ]
+}

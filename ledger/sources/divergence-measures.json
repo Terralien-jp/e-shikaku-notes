@@ -1,0 +1,1 @@
+{"slug":"divergence-measures","sources":[{"title":"Deep Learning: Probability and Information Theory","url":"https://www.deeplearningbook.org/contents/prob.html","why":"KLダイバージェンス、交差エントロピー、分布間距離の定義"},{"title":"KLDivLoss","url":"https://docs.pytorch.org/docs/2.13/generated/torch.nn.KLDivLoss.html","why":"KLダイバージェンスを損失として計算する公式API仕様"}]}
