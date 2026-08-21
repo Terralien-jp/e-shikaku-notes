@@ -448,7 +448,7 @@
       "syllabus_refs": [
         "3.5.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "seq2seq-and-attention",
@@ -459,7 +459,7 @@
       "syllabus_refs": [
         "3.5.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "transformer",
@@ -470,7 +470,7 @@
       "syllabus_refs": [
         "3.6.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "image-augmentation",
@@ -503,7 +503,7 @@
       "syllabus_refs": [
         "3.7.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "deep-ensemble",
@@ -547,7 +547,7 @@
       "syllabus_refs": [
         "4.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "vision-transformer",
