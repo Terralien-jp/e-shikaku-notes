@@ -789,7 +789,7 @@
       "syllabus_refs": [
         "5.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "distributed-deep-learning",
@@ -800,7 +800,7 @@
       "syllabus_refs": [
         "5.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "parallelization-strategies",
@@ -844,7 +844,7 @@
       "syllabus_refs": [
         "1.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "bayesian-inference",
@@ -1108,7 +1108,7 @@
       "syllabus_refs": [
         "3.5.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "gru",
@@ -1130,7 +1130,7 @@
       "syllabus_refs": [
         "3.6.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "normalization-variants",
@@ -1141,7 +1141,7 @@
       "syllabus_refs": [
         "3.7.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "residual-block",
@@ -1152,7 +1152,7 @@
       "syllabus_refs": [
         "4.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "object-detection-basics",
@@ -1207,7 +1207,7 @@
       "syllabus_refs": [
         "4.4.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "autoregressive-generation",
