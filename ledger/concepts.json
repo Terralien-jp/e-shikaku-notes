@@ -283,7 +283,7 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "momentum-optimization",
@@ -327,7 +327,7 @@
       "syllabus_refs": [
         "3.2.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "adaptive-optimizers",
@@ -393,7 +393,7 @@
       "syllabus_refs": [
         "3.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "specialized-convolutions",
@@ -426,7 +426,7 @@
       "syllabus_refs": [
         "3.5.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "bptt",
