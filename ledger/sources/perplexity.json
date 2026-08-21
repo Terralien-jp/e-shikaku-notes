@@ -1,0 +1,7 @@
+{
+  "slug": "perplexity",
+  "sources": [
+    {"title": "Perplexity of fixed-length models", "url": "https://huggingface.co/docs/transformers/perplexity", "why": "言語モデルの負の対数尤度からperplexityを計算する定義と評価手順"},
+    {"title": "Perplexity", "url": "https://huggingface.co/docs/evaluate/perplexity", "why": "perplexity評価モジュールの入力・計算・集計仕様"}
+  ]
+}

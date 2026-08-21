@@ -1,0 +1,7 @@
+{
+  "slug": "roc-and-auc",
+  "sources": [
+    {"title": "An introduction to ROC analysis", "url": "https://doi.org/10.1016/j.patrec.2005.10.010", "why": "ROC曲線、真陽性率・偽陽性率、AUCの定義と解釈"},
+    {"title": "3.4. Metrics and scoring: quantifying the quality of predictions", "url": "https://scikit-learn.org/stable/modules/model_evaluation.html", "why": "ROC AUCの計算方法と分類評価APIの公式仕様"}
+  ]
+}

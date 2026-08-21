@@ -1,0 +1,7 @@
+{
+  "slug": "binary-cross-entropy",
+  "sources": [
+    {"title": "BCELoss", "url": "https://docs.pytorch.org/docs/2.13/generated/torch.nn.BCELoss.html", "why": "二値交差エントロピーの定義、reduction、数値安定化の実装根拠"},
+    {"title": "Generative Adversarial Networks", "url": "https://arxiv.org/abs/1406.2661", "why": "GAN識別器の二値対数損失を用いる目的関数の根拠"}
+  ]
+}

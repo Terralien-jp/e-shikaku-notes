@@ -1,0 +1,1 @@
+{"slug":"deep-ensemble","sources":[{"title":"Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles","url":"https://arxiv.org/abs/1612.01474","why":"複数の独立学習したニューラルネットの予測平均と不確実性推定"},{"title":"Deep Ensembles: A Loss Landscape Perspective","url":"https://arxiv.org/abs/1912.02757","why":"深層アンサンブルの多様性と損失地形に関する分析"}]}

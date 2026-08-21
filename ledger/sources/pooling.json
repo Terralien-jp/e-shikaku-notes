@@ -1,0 +1,7 @@
+{
+  "slug": "pooling",
+  "sources": [
+    {"title": "MaxPool2d", "url": "https://docs.pytorch.org/docs/2.13/generated/torch.nn.MaxPool2d.html", "why": "max poolingの窓、stride、paddingと出力形状のAPI仕様"},
+    {"title": "One weird trick for parallelizing convolutional neural networks", "url": "https://arxiv.org/abs/1404.5997", "why": "畳み込みネットワークでのpoolingを含む画像認識アーキテクチャの設計根拠"}
+  ]
+}

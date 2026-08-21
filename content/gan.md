@@ -7,7 +7,7 @@ area: 深層学習
 summary: 生成器と識別器を競わせ、識別器が最適なら生成器がデータ分布との差を小さくするminimaxゲームとして学習する生成モデルです。
 updated: 2026-08-22
 sources:
-  - title: "Generative Adversarial Nets"
+  - title: "Generative Adversarial Networks"
     url: https://arxiv.org/abs/1406.2661
 ---
 

@@ -1,0 +1,1 @@
+{"slug":"cross-validation","sources":[{"title":"Cross-validation: evaluating estimator performance","url":"https://scikit-learn.org/stable/modules/cross_validation.html","why":"交差検証、k-fold分割、訓練データ内での性能評価の定義"},{"title":"cross_validate","url":"https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html","why":"複数の評価指標とfit・score時間を交差検証で取得する公式仕様"}]}

@@ -1,0 +1,7 @@
+{
+  "slug": "visual-explanations",
+  "sources": [
+    {"title": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization", "url": "https://arxiv.org/abs/1610.02391", "why": "勾配からクラス判別に寄与した画像領域を可視化するGrad-CAMの定式化"},
+    {"title": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier", "url": "https://arxiv.org/abs/1602.04938", "why": "局所的な代理モデルで予測理由を説明するLIMEの提案"}
+  ]
+}

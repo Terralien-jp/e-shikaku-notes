@@ -1,0 +1,1 @@
+{"slug":"softmax-and-onehot","sources":[{"title":"Softmax","url":"https://docs.pytorch.org/docs/2.13/generated/torch.nn.Softmax.html","why":"ロジットを確率分布へ写像するsoftmaxの定義と次元指定"},{"title":"torch.nn.functional.one_hot","url":"https://docs.pytorch.org/docs/2.13/generated/torch.nn.functional.one_hot.html","why":"整数クラスラベルをone-hot表現へ変換する公式仕様"}]}

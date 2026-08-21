@@ -1,0 +1,6 @@
+{
+  "slug": "panoptic-segmentation",
+  "sources": [
+    {"title": "Panoptic Segmentation", "url": "https://arxiv.org/abs/1801.00868", "why": "semanticとinstanceを統合するpanoptic segmentationの定義とPQ指標"}
+  ]
+}

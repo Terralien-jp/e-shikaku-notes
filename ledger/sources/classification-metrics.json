@@ -1,0 +1,1 @@
+{"slug":"classification-metrics","sources":[{"title":"sklearn.metrics","url":"https://scikit-learn.org/stable/api/sklearn.metrics.html","why":"分類の正解率、適合率、再現率、F値、ROC-AUCなどの公式指標仕様"},{"title":"classification_report","url":"https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html","why":"多クラス分類のprecision・recall・F1とsupportの集計仕様"}]}

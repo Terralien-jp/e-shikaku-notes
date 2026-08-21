@@ -1,0 +1,7 @@
+{
+  "slug": "bptt",
+  "sources": [
+    {"title": "Sequence Modeling: Recurrent and Recursive Nets", "url": "https://www.deeplearningbook.org/contents/rnn.html", "why": "RNNを時間方向に展開して勾配を計算するBPTTの計算グラフと勾配伝播"},
+    {"title": "Advances in Optimizing Recurrent Networks", "url": "https://arxiv.org/abs/1212.0901", "why": "長い系列での逆伝播最適化と勾配消失・爆発への対処"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "slug": "container-virtualization",
+  "sources": [
+    {"title": "NVIDIA Container Toolkit", "url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/overview.html", "why": "コンテナからGPUを利用するためのランタイム統合と構成"},
+    {"title": "NVIDIA Container Runtime", "url": "https://developer.nvidia.com/container-runtime", "why": "GPU対応コンテナランタイムの役割と実行環境への接続"}
+  ]
+}

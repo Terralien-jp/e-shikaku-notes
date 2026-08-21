@@ -1,0 +1,1 @@
+{"slug":"momentum-optimization","sources":[{"title":"Deep Learning: Optimization for Training Deep Models","url":"https://www.deeplearningbook.org/contents/optimization.html","why":"勾配に過去の更新を蓄積するモメンタム法の更新則"},{"title":"SGD","url":"https://docs.pytorch.org/docs/2.13/generated/torch.optim.SGD.html","why":"momentum、dampening、Nesterovを含む公式SGD実装仕様"}]}

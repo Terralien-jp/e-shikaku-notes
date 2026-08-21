@@ -1,0 +1,7 @@
+{
+  "slug": "precision-recall-f1",
+  "sources": [
+    {"title": "precision_recall_fscore_support", "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html", "why": "適合率・再現率・F値の定義と二値・多クラス平均の仕様"},
+    {"title": "classification_report", "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html", "why": "クラス別Precision・Recall・F1とsupportをまとめる評価仕様"}
+  ]
+}

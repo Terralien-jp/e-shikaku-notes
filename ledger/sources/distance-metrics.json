@@ -1,0 +1,7 @@
+{
+  "slug": "distance-metrics",
+  "sources": [
+    {"title": "pairwise_distances", "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html", "why": "ユークリッド距離・マンハッタン距離などペア間距離の計算仕様"},
+    {"title": "Metrics and scoring: quantifying the quality of predictions", "url": "https://scikit-learn.org/stable/modules/metrics.html", "why": "距離・類似度を用いた評価関数の選択と計算インターフェース"}
+  ]
+}

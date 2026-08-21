@@ -1,0 +1,7 @@
+{
+  "slug": "l1-and-l2-penalty",
+  "sources": [
+    {"title": "Deep Learning", "url": "https://www.deeplearningbook.org/contents/regularization.html", "why": "L1・L2正則化項の定義、重み減衰、過学習抑制の理論的根拠"},
+    {"title": "SGD", "url": "https://docs.pytorch.org/docs/2.13/generated/torch.optim.SGD.html", "why": "weight_decayとして実装されるL2型ペナルティのAPI仕様"}
+  ]
+}

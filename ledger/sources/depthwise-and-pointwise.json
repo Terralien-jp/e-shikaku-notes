@@ -1,0 +1,7 @@
+{
+  "slug": "depthwise-and-pointwise",
+  "sources": [
+    {"title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", "url": "https://arxiv.org/abs/1704.04861", "why": "depthwise convolutionとpointwise convolutionによる分離畳み込みの構成"},
+    {"title": "Xception: Deep Learning with Depthwise Separable Convolutions", "url": "https://arxiv.org/abs/1610.02357", "why": "depthwise separable convolutionの設計意図と計算量削減の根拠"}
+  ]
+}

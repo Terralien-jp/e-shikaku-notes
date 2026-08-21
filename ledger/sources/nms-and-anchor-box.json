@@ -1,0 +1,8 @@
+{
+  "slug": "nms-and-anchor-box",
+  "sources": [
+    {"title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks", "url": "https://arxiv.org/abs/1506.01497", "why": "アンカーを用いた領域提案とNMSを含む物体検出パイプライン"},
+    {"title": "SSD: Single Shot MultiBox Detector", "url": "https://arxiv.org/abs/1512.02325", "why": "マルチスケールのデフォルトボックスと検出後処理の根拠"},
+    {"title": "nms", "url": "https://docs.pytorch.org/vision/stable/generated/torchvision.ops.nms.html", "why": "IoU閾値で重複ボックスを抑制するNMS APIの仕様"}
+  ]
+}

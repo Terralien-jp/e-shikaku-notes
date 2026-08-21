@@ -1,0 +1,7 @@
+{
+  "slug": "specialized-convolutions",
+  "sources": [
+    {"title": "Deformable Convolutional Networks", "url": "https://arxiv.org/abs/1703.06211", "why": "畳み込みのサンプリング位置を学習するdeformable convolutionの提案"},
+    {"title": "Squeeze-and-Excitation Networks", "url": "https://arxiv.org/abs/1709.01507", "why": "チャネル注意で畳み込み特徴を再重み付けするSE blockの根拠"}
+  ]
+}

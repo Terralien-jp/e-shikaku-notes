@@ -1,0 +1,7 @@
+{
+  "slug": "tanh-activation",
+  "sources": [
+    {"title": "Tanh", "url": "https://docs.pytorch.org/docs/2.13/generated/torch.nn.Tanh.html", "why": "tanhの定義、出力範囲、PyTorchでの実装仕様"},
+    {"title": "Practical recommendations for gradient-based training of deep architectures", "url": "https://arxiv.org/abs/1206.5533", "why": "tanhを含む活性化関数の初期化・勾配伝播上の実践的根拠"}
+  ]
+}

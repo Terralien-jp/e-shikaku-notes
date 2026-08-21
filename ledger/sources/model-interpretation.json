@@ -1,0 +1,7 @@
+{
+  "slug": "model-interpretation",
+  "sources": [
+    {"title": "Why Should I Trust You?: Explaining the Predictions of Any Classifier", "url": "https://arxiv.org/abs/1602.04938", "why": "LIMEによる個別予測の局所的な説明とモデル非依存性"},
+    {"title": "A Unified Approach to Interpreting Model Predictions", "url": "https://arxiv.org/abs/1705.07874", "why": "SHAP値による特徴量寄与の定義と協力ゲーム理論との接続"}
+  ]
+}

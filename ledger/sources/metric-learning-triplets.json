@@ -1,0 +1,7 @@
+{
+  "slug": "metric-learning-triplets",
+  "sources": [
+    {"title": "FaceNet: A Unified Embedding for Face Recognition and Clustering", "url": "https://arxiv.org/abs/1503.03832", "why": "anchor・positive・negativeによるtriplet lossと埋め込み学習の根拠"},
+    {"title": "Deep metric learning using Triplet network", "url": "https://arxiv.org/abs/1412.6622", "why": "三つ組の距離制約で類似度を学習するtriplet networkの提案"}
+  ]
+}

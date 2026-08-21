@@ -1,0 +1,7 @@
+{
+  "slug": "iou-and-map",
+  "sources": [
+    {"title": "Microsoft COCO: Common Objects in Context", "url": "https://arxiv.org/abs/1405.0312", "why": "IoU閾値を変えた検出評価とAP・mAPの評価設計"},
+    {"title": "3.4. Metrics and scoring: quantifying the quality of predictions", "url": "https://scikit-learn.org/stable/modules/model_evaluation.html", "why": "average precisionなど予測評価指標の公式な計算仕様"}
+  ]
+}

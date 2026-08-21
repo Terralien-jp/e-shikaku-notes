@@ -1,0 +1,8 @@
+{
+  "slug": "gan-stability",
+  "sources": [
+    {"title": "Wasserstein GAN", "url": "https://arxiv.org/abs/1701.07875", "why": "Wasserstein距離によるGANの目的関数と学習安定化の根拠"},
+    {"title": "Improved Techniques for Training GANs", "url": "https://arxiv.org/abs/1606.03498", "why": "特徴量マッチング・ミニバッチなどGAN安定化手法の根拠"},
+    {"title": "Spectral Normalization for Generative Adversarial Networks", "url": "https://arxiv.org/abs/1802.05957", "why": "スペクトル正規化による識別器のリプシッツ制約と安定化"}
+  ]
+}

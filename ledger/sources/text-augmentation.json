@@ -1,0 +1,7 @@
+{
+  "slug": "text-augmentation",
+  "sources": [
+    {"title": "EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks", "url": "https://arxiv.org/abs/1901.11196", "why": "同義語置換・挿入・交換・削除によるテキスト拡張手法の根拠"},
+    {"title": "Improving Neural Machine Translation Models with Monolingual Data", "url": "https://arxiv.org/abs/1511.06709", "why": "逆翻訳による合成データ生成をデータ拡張に使う根拠"}
+  ]
+}

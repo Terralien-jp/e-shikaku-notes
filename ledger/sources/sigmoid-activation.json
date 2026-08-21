@@ -1,0 +1,7 @@
+{
+  "slug": "sigmoid-activation",
+  "sources": [
+    {"title": "torch.sigmoid", "url": "https://docs.pytorch.org/docs/stable/generated/torch.sigmoid.html", "why": "シグモイド関数の定義域・値域とテンソル演算の公式仕様"},
+    {"title": "Deep Feedforward Networks", "url": "https://www.deeplearningbook.org/contents/mlp.html", "why": "活性化関数としてのシグモイドと勾配計算上の性質"}
+  ]
+}

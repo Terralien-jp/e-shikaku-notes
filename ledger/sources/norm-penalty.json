@@ -1,0 +1,1 @@
+{"slug":"norm-penalty","sources":[{"title":"Deep Learning: Regularization for Deep Learning","url":"https://www.deeplearningbook.org/contents/regularization.html","why":"L1・L2ノルムペナルティを損失へ加える定式化と正則化の効果"},{"title":"Ridge","url":"https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html","why":"L2正則化付き最小二乗の目的関数と公式実装仕様"}]}

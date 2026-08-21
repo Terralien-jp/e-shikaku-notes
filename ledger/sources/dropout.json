@@ -1,0 +1,7 @@
+{
+  "slug": "dropout",
+  "sources": [
+    {"title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting", "url": "https://www.jmlr.org/papers/v15/srivastava14a.html", "why": "訓練時のランダムなユニット無効化と過学習抑制の提案根拠"},
+    {"title": "Dropout", "url": "https://docs.pytorch.org/docs/2.13/generated/torch.nn.Dropout.html", "why": "Dropoutの訓練時・評価時の挙動とスケーリング実装"}
+  ]
+}
