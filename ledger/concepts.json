@@ -162,7 +162,7 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "iou-and-map",
@@ -173,7 +173,7 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "regression-metrics",
@@ -184,7 +184,7 @@
       "syllabus_refs": [
         "2.1.xi"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "confusion-matrix",
@@ -228,7 +228,7 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "binary-cross-entropy",
@@ -239,7 +239,7 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "multiclass-cross-entropy",
@@ -250,7 +250,7 @@
       "syllabus_refs": [
         "3.1.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "special-classification-loss",
@@ -294,7 +294,7 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "pathological-curvature",
@@ -349,7 +349,7 @@
       "syllabus_refs": [
         "3.2.iv"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "norm-penalty",
