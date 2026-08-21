@@ -646,7 +646,7 @@
       "syllabus_refs": [
         "4.6.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "autoencoder",
@@ -668,7 +668,7 @@
       "syllabus_refs": [
         "4.6.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "gan",
@@ -855,7 +855,7 @@
       "syllabus_refs": [
         "1.2.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "likelihood-and-map",
@@ -943,7 +943,7 @@
       "syllabus_refs": [
         "3.1.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "mse-and-mae",
@@ -1009,7 +1009,7 @@
       "syllabus_refs": [
         "3.2.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "nesterov-acceleration",
