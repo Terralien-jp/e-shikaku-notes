@@ -296,6 +296,39 @@ def check_math(stem: str, body: str) -> list[Finding]:
     exprs += [m.group(1) for m in re.finditer(r"(?<!\$)\$([^$\n]+)\$(?!\$)", inline)]
     if exprs:
         out += _katex_parse(stem, exprs)
+    out += check_math_escape(stem, body)
+    return out
+
+
+# バックスラッシュが落ちた LaTeX コマンド（\mathbf → mathbf）。KaTeX は
+# ただの英字列として通してしまうため、パーサでは捕まらない。読者には
+# 「mathbf{x}」がそのまま表示される。
+BARE_CMDS = (
+    "mathbf mathbb mathrm mathsf mathcal operatorname frac sqrt sum prod "
+    "ldots cdots cdot odot oplus otimes times partial nabla infty "
+    "lVert rVert langle rangle boldsymbol propto approx neq leq geq notin subset mapsto "
+    "alpha beta gamma delta epsilon varepsilon zeta eta theta kappa lambda mu nu xi "
+    "rho sigma tau phi varphi chi psi omega "
+    "Gamma Delta Theta Lambda Sigma Phi Psi Omega"
+).split()
+BARE_RE = re.compile(r"(?<![\\A-Za-z])(" + "|".join(sorted(BARE_CMDS, key=len, reverse=True)) + r")(?![A-Za-z])")
+MATH_SPAN = re.compile(r"\$\$.*?\$\$|\$[^$\n]+\$", re.S)
+
+
+def check_math_escape(stem: str, body: str) -> list[Finding]:
+    out: list[Finding] = []
+    stripped = strip_code_blocks(body)
+    for span in MATH_SPAN.finditer(stripped):
+        expr = span.group(0)
+        for m in BARE_RE.finditer(expr):
+            # x_{max} のような添字の英単語は誤検出なので除く
+            before = expr[:m.start()]
+            if before.endswith("{") and before[:-1].endswith(("_", "^")):
+                continue
+            out.append(Finding("ERROR", "MATH_ESCAPE",
+                               f"{stem}: 数式内の {m.group(1)} にバックスラッシュがありません: {expr[:60]}"))
+    if "\t" in stripped:
+        out.append(Finding("ERROR", "MATH_ESCAPE", f"{stem}: 本文にタブ文字があります（\\theta 等の書き損じの疑い）"))
     return out
 
 

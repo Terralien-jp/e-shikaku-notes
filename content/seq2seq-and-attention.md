@@ -39,13 +39,13 @@ sources:
 
 ## 仕組み
 
-入力を $mathbf{x}=(x_1,ldots,x_{T_x})$、エンコーダが各位置で出す隠れ状態（注釈）を $mathbf{h}_j$、デコーダの直前の隠れ状態を $mathbf{s}_{i-1}$ とします。$mathbf{h}_j$ は入力の文脈を含み、$T_x$ は入力系列長です。デコーダが時刻 $i$ の出力を作るとき、まず加法的なアライメントモデルで位置 $j$ の関連度を計算します。
+入力を $\mathbf{x}=(x_1,\ldots,x_{T_x})$、エンコーダが各位置で出す隠れ状態（注釈）を $\mathbf{h}_j$、デコーダの直前の隠れ状態を $\mathbf{s}_{i-1}$ とします。$\mathbf{h}_j$ は入力の文脈を含み、$T_x$ は入力系列長です。デコーダが時刻 $i$ の出力を作るとき、まず加法的なアライメントモデルで位置 $j$ の関連度を計算します。
 
 $$
-e_{ij}=a(mathbf{s}_{i-1},mathbf{h}_j)=mathbf{v}_a^{\top}\tanh\left(W_amathbf{s}_{i-1}+U_amathbf{h}_j\right)
+e_{ij}=a(\mathbf{s}_{i-1},\mathbf{h}_j)=\mathbf{v}_a^{\top}\tanh\left(W_amathbf{s}_{i-1}+U_amathbf{h}_j\right)
 $$
 
-$e_{ij}$ は出力位置 $i$ と入力位置 $j$ の対応度、$a$ は学習されるフィードフォワードネットワーク、$mathbf{v}_a,W_a,U_a$ はその重みです。次に、入力位置方向へsoftmaxを適用して確率のような注意重みへ変換します。
+$e_{ij}$ は出力位置 $i$ と入力位置 $j$ の対応度、$a$ は学習されるフィードフォワードネットワーク、$\mathbf{v}_a,W_a,U_a$ はその重みです。次に、入力位置方向へsoftmaxを適用して確率のような注意重みへ変換します。
 
 $$
 \alpha_{ij}=\frac{\exp(e_{ij})}{\sum_{k=1}^{T_x}\exp(e_{ik})}
