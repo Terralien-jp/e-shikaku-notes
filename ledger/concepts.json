@@ -635,7 +635,7 @@
       "syllabus_refs": [
         "4.4.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "generative-discriminative-models",
@@ -701,7 +701,7 @@
       "syllabus_refs": [
         "4.7.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "a3c",
@@ -734,7 +734,7 @@
       "syllabus_refs": [
         "4.8.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "metric-learning-pairs",
@@ -1218,7 +1218,7 @@
       "syllabus_refs": [
         "4.6.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "diffusion-model",
@@ -1229,7 +1229,7 @@
       "syllabus_refs": [
         "4.6.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "gan-stability",

@@ -2,9 +2,14 @@
   "slug": "autoregressive-generation",
   "sources": [
     {
-      "title": "Language Models are Unsupervised Multitask Learners",
-      "url": "https://openreview.net/forum?id=H1gaxQgrg",
-      "why": "自己回帰言語モデルによる逐次トークン生成と事前学習の位置付け"
+      "title": "Deep Learning: Sequence Modeling",
+      "url": "https://www.deeplearningbook.org/contents/rnn.html",
+      "why": "系列の同時分布を条件付き確率の積へ分解する自己回帰の定式化"
+    },
+    {
+      "title": "Pixel Recurrent Neural Networks",
+      "url": "https://arxiv.org/abs/1601.06759",
+      "why": "画素を1つずつ条件付きで生成する自己回帰生成モデルの具体例"
     }
   ]
 }
