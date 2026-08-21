@@ -409,6 +409,36 @@ def check_links(stem: str, fm: str) -> list[Finding]:
 
 # ------------------------------------------------------------------ 実行
 
+# 地の文の分量。表・コード・数式ブロック・生HTMLを除いて数える（表を足して
+# 字数を稼いだものを通さないため）。規約の下限は docs/writer-brief.md 側にあり、
+# ここでは「規約の下限」を WARN、「明らかな未達」を ERROR にする。
+PROSE_FLOOR = {"A": (1800, 1400), "B": (900, 700), "C": (400, 300)}
+
+
+def prose_length(body: str) -> int:
+    t = re.sub(r"```.*?```", "", body, flags=re.S)
+    t = re.sub(r"\$\$.*?\$\$", "", t, flags=re.S)
+    t = re.sub(r"^\|.*$", "", t, flags=re.M)
+    t = re.sub(r"<[^>]+>", "", t)
+    t = re.sub(r"^#.*$", "", t, flags=re.M)
+    return len(re.sub(r"\s", "", t))
+
+
+def check_length(stem: str, body: str, tier: str) -> list[Finding]:
+    floor = PROSE_FLOOR.get(tier)
+    if not floor:
+        return []
+    soft, hard = floor
+    n = prose_length(body)
+    if n < hard:
+        return [Finding("ERROR", "PROSE_SHORT",
+                        f"{stem}: 地の文が {n}字。Tier {tier} の下限 {soft}字に対して不足が大きすぎます")]
+    if n < soft:
+        return [Finding("WARN", "PROSE_SHORT",
+                        f"{stem}: 地の文が {n}字。Tier {tier} の下限は {soft}字です")]
+    return []
+
+
 def validate(paths: list[Path], *, check_links_: bool, check_code_: bool) -> list[Finding]:
     ledger, findings = load_ledger()
     existing = {p.stem for p in note_paths()}
@@ -428,6 +458,7 @@ def validate(paths: list[Path], *, check_links_: bool, check_code_: bool) -> lis
         findings += check_raw_html_blocks(stem, body)
         findings += check_internal_links(stem, body, existing)
         findings += check_math(stem, body)
+        findings += check_length(stem, body, ledger.get(stem, {}).get("tier", ""))
         if check_code_:
             findings += check_code(stem, body)
         if check_links_:
