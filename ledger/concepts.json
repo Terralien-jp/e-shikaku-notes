@@ -382,7 +382,7 @@
       "syllabus_refs": [
         "3.3.iii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "convolution-operation",
@@ -558,7 +558,7 @@
       "syllabus_refs": [
         "4.1.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "faster-rcnn-mask-rcnn",
@@ -613,7 +613,7 @@
       "syllabus_refs": [
         "4.4.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "bert",
@@ -624,7 +624,7 @@
       "syllabus_refs": [
         "4.4.ii"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "gpt-and-rag",
@@ -723,7 +723,7 @@
       "syllabus_refs": [
         "4.8.i"
       ],
-      "status": "todo"
+      "status": "done"
     },
     {
       "slug": "semi-self-supervised-learning",

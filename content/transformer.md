@@ -37,7 +37,7 @@ Transformerの自己注意なら、1つの層で全位置の組を比較でき�
 
 ## 仕組み
 
-入力を埋め込み、位置エンコーディングを加えた行列をエンコーダへ入れます。原論文の基本構成では、エンコーダは同じ層を6個積み、各層を **Multi-Head Self-Attention → 残差接続とLayerNorm → 位置ごとのFFN → 残差接続とLayerNorm** とします。デコーダも6層で、これに「エンコーダ出力を参照するMulti-Head Attention」が加わります。各サブ層の出力は概念的に $mathrm{LayerNorm}(x+mathrm{Sublayer}(x))$ です。
+入力を埋め込み、位置エンコーディングを加えた行列をエンコーダへ入れます。原論文の基本構成では、エンコーダは同じ層を6個積み、各層を **Multi-Head Self-Attention → 残差接続とLayerNorm → 位置ごとのFFN → 残差接続とLayerNorm** とします。デコーダも6層で、これに「エンコーダ出力を参照するMulti-Head Attention」が加わります。各サブ層の出力は概念的に $\mathrm{LayerNorm}(x+\mathrm{Sublayer}(x))$ です。
 
 Scaled Dot-Product Attentionは、クエリ行列 $Q$、キー行列 $K$、値行列 $V$ から次を計算します。
 

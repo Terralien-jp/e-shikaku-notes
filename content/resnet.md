@@ -37,21 +37,21 @@ ResNet は、追加層に恒等写像そのものを作らせるのではなく�
 
 ## 仕組み
 
-入力を $mathbf{x}$、積み重ねた層が学習する残差写像を $mathcal{F}(mathbf{x},{W_i})$、出力を $mathbf{y}$ とすると、基本形は次です。$W_i$ は残差側の学習パラメータです。
+入力を $\mathbf{x}$、積み重ねた層が学習する残差写像を $\mathcal{F}(\mathbf{x},{W_i})$、出力を $\mathbf{y}$ とすると、基本形は次です。$W_i$ は残差側の学習パラメータです。
 
 $$
 \mathbf{y}=\mathcal{F}(\mathbf{x},\{W_i\})+\mathbf{x}
 $$
 
-同じ式を通常の写像 $mathcal{H}(mathbf{x})$ で書けば、$mathcal{F}=mathcal{H}-mathbf{x}$ です。逆伝播で上流へ戻る勾配を $partial L/partialmathbf{y}$（$L$ は損失）とすると、ショートカットを含む入力勾配は概念的に
+同じ式を通常の写像 $\mathcal{H}(\mathbf{x})$ で書けば、$\mathcal{F}=\mathcal{H}-\mathbf{x}$ です。逆伝播で上流へ戻る勾配を $\partial L/partialmathbf{y}$（$L$ は損失）とすると、ショートカットを含む入力勾配は概念的に
 
 $$
 \frac{\partial L}{\partial\mathbf{x}}=\frac{\partial L}{\partial\mathbf{y}}\left(\frac{\partial\mathcal{F}}{\partial\mathbf{x}}+\mathbf{I}\right)
 $$
 
-です。$mathbf{I}$ は恒等写像のヤコビアンです。残差側の微分が小さくても、ショートカット由来の $mathbf{I}$ によって勾配の通り道が残ります。ただし「必ず勾配消失しない」という意味ではなく、深い層をまたぐ直接経路を追加する、という意味です。
+です。$\mathbf{I}$ は恒等写像のヤコビアンです。残差側の微分が小さくても、ショートカット由来の $\mathbf{I}$ によって勾配の通り道が残ります。ただし「必ず勾配消失しない」という意味ではなく、深い層をまたぐ直接経路を追加する、という意味です。
 
-加算には $mathbf{x}$ と $mathcal{F}(mathbf{x})$ の形状が一致していなければなりません。一致する区間は identity shortcut で、原論文では追加パラメータも計算量もありません。チャネル数や空間サイズを変える箇所では、(A) identity にゼロを足して次元を増やすか、(B) $1\times1$ 畳み込みによる射影 $W_s$ で合わせます。射影を使う場合は次の形です。
+加算には $\mathbf{x}$ と $\mathcal{F}(\mathbf{x})$ の形状が一致していなければなりません。一致する区間は identity shortcut で、原論文では追加パラメータも計算量もありません。チャネル数や空間サイズを変える箇所では、(A) identity にゼロを足して次元を増やすか、(B) $1\times1$ 畳み込みによる射影 $W_s$ で合わせます。射影を使う場合は次の形です。
 
 $$
 \mathbf{y}=\mathcal{F}(\mathbf{x},\{W_i\})+W_s\mathbf{x}
