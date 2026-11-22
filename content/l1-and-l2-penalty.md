@@ -55,7 +55,7 @@ $$
 L1の微分はゼロで連続ではありません。$\theta_i\ne0$ では符号関数 $\operatorname{sign}(\theta_i)$、ゼロでは劣勾配 $s_i\in[-1,1]$ を使います。
 
 $$
-\partial|\theta_i|=\begin{cases}\{+1\}&\theta_i>0\\ \{-1,1\}&\theta_i=0\\ \{-1\}&\theta_i<0\end{cases}
+\partial|\theta_i|=\begin{cases}\{+1\}&\theta_i>0\\ [-1,1]&\theta_i=0\\ \{-1\}&\theta_i<0\end{cases}
 $$
 
 そのためゼロ付近では、データ損失の勾配がこの範囲に収まると更新をゼロで止められます。L2は非ゼロの重みをゼロにしにくく、L1は疎なパラメータを作りやすい差があります。バイアス項は入力に依存しないオフセットで重みとは役割が違うため、通常は罰則から外します。
